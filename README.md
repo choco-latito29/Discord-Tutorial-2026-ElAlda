@@ -80,18 +80,16 @@ Sigue estos pasos para desplegar el bot en tu entorno local:
    client.login("TOKEN_BOT_AQUI");
    ```
 
-Reemplaza `"TOKEN_BOT_AQUI"` con el token real de tu aplicación (obtenido en el Developer Portal). 4. **Encender el bot:**
+Reemplaza `"TOKEN_BOT_AQUI"` con el token real de tu aplicación (obtenido en el Developer Portal).
 
-    ```bash
-    node index.js
+4. **Encender el bot:**
 
-    ```
+   ```bash
+   node index.js
+
+   ```
 
 ---
 
 Please give a ⭐️ if you like this project!
 Copyright © 2026 [𝒞𝒽𝑜𝒸𝑜](https://github.com/choco-latito29).
-
-```
-
-```
