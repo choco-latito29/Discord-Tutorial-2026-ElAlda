@@ -65,27 +65,27 @@ Sigue estos pasos para desplegar el bot en tu entorno local:
 2. **Instalar dependencias:**
    Navega a la carpeta del proyecto e instala los paquetes necesarios:
 
-```bash
-cd Discord-Tutorial-2026-ElAlda
+   ```bash
+   cd Discord-Tutorial-2026-ElAlda
 
-npm install
+   npm install
 
-```
+   ```
 
 3. **Configuración (Token):**
    _Importante: Este paso es temporal mientras seguimos el tutorial #0. Más adelante usaremos variables de entorno._
    Abre el archivo `index.js` y localiza la última línea:
 
-```javascript
-client.login("TOKEN_BOT_AQUI");
-```
+   ```javascript
+   client.login("TOKEN_BOT_AQUI");
+   ```
 
 Reemplaza `"TOKEN_BOT_AQUI"` con el token real de tu aplicación (obtenido en el Developer Portal). 4. **Encender el bot:**
 
-```bash
-node index.js
+    ```bash
+    node index.js
 
-```
+    ```
 
 ---
 
