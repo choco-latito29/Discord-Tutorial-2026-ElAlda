@@ -57,20 +57,20 @@ Lista curada de herramientas y documentación oficial utilizada en este proyecto
 Sigue estos pasos para desplegar el bot en tu entorno local:
 
 1. **Clonar el repositorio:**
+
    ```bash
    git clone https://github.com/choco-latito29/Discord-Tutorial-2026-ElAlda.git
    ```
 
-````
-
 2. **Instalar dependencias:**
-Navega a la carpeta del proyecto e instala los paquetes necesarios:
+   Navega a la carpeta del proyecto e instala los paquetes necesarios:
+
 ```bash
 cd Discord-Tutorial-2026-ElAlda
 
 npm install
 
-````
+```
 
 3. **Configuración (Token):**
    _Importante: Este paso es temporal mientras seguimos el tutorial #0. Más adelante usaremos variables de entorno._
