@@ -1,0 +1,20 @@
+# --- Dependencias ---
+node_modules/
+package-lock.json # Opcional: algunos prefieren subirlo, pero en proyectos personales a veces estorba si cambias de PC
+
+# --- Sistema y Entorno ---
+.DS_Store
+Thumbs.db
+.vscode/
+
+# --- Seguridad y Secretos (¡CRÍTICO!) ---
+# Ignora cualquier archivo que pueda contener tu token
+.env
+config.json
+token.js
+secrets.js
+
+# --- Logs ---
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
