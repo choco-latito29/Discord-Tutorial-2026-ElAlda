@@ -54,40 +54,51 @@ Lista curada de herramientas y documentación oficial utilizada en este proyecto
 
 ## 🚀 Instalación y Uso
 
-Sigue estos pasos para desplegar el bot en tu entorno local:
+### 🔄 Actualización (Si ya tienes el bot)
+
+Si ya clonaste el repositorio anteriormente y quieres bajar los cambios del último video, **no clones de nuevo**. Simplemente abre tu terminal en la carpeta del bot y ejecuta:
+
+```bash
+git pull
+
+```
+
+---
+
+### 🆕 Instalación desde cero
+
+Sigue estos pasos si es la primera vez que descargas el bot:
 
 1. **Clonar el repositorio:**
 
-   ```bash
-   git clone https://github.com/choco-latito29/Discord-Tutorial-2026-ElAlda.git
-   ```
+```bash
+git clone [https://github.com/choco-latito29/Discord-Tutorial-2026-ElAlda.git](https://github.com/choco-latito29/Discord-Tutorial-2026-ElAlda.git)
+
+```
 
 2. **Instalar dependencias:**
    Navega a la carpeta del proyecto e instala los paquetes necesarios:
 
-   ```bash
-   cd Discord-Tutorial-2026-ElAlda
+```bash
+cd Discord-Tutorial-2026-ElAlda
+npm install
 
-   npm install
-
-   ```
+```
 
 3. **Configuración (Token):**
    _Importante: Este paso es temporal mientras seguimos el tutorial #0. Más adelante usaremos variables de entorno._
    Abre el archivo `index.js` y localiza la última línea:
 
-   ```javascript
-   client.login("TOKEN_BOT_AQUI");
-   ```
+```javascript
+client.login("TOKEN_BOT_AQUI");
+```
 
-Reemplaza `"TOKEN_BOT_AQUI"` con el token real de tu aplicación (obtenido en el Developer Portal).
+Reemplaza `"TOKEN_BOT_AQUI"` con el token real de tu aplicación (obtenido en el Developer Portal). 4. **Encender el bot:**
 
-4. **Encender el bot:**
+```bash
+node index.js
 
-   ```bash
-   node index.js
-
-   ```
+```
 
 ---
 

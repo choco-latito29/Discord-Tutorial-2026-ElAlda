@@ -1,15 +1,33 @@
 {
   "name": "alda-tutorial",
   "version": "1.0.0",
-  "description": "",
+  "description": "Bot de Discord oficial siguiendo la serie de tutoriales 2026 de ElAlda.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/choco-latito29/Discord-Tutorial-2026-ElAlda.git"
+  },
+  "keywords": [
+    "discord",
+    "bot",
+    "discord.js",
+    "nodejs",
+    "tutorial",
+    "elalda"
+  ],
+  "author": "𝒞𝒽𝑜𝒸𝑜 <https://github.com/choco-latito29>",
   "license": "MIT",
   "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/choco-latito29/Discord-Tutorial-2026-ElAlda/issues"
+  },
+  "homepage": "https://github.com/choco-latito29/Discord-Tutorial-2026-ElAlda#readme",
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "dependencies": {
     "discord.js": "^14.25.1"
   }
