@@ -57,7 +57,7 @@ Lista curada de herramientas y documentación oficial utilizada en este proyecto
 
 ### 🔄 Actualización (Si ya tienes el bot)
 
-Si ya clonaste el repositorio anteriormente y quieres bajar los cambios del último video, **no clones de nuevo**. Simplemente abre tu terminal en la carpeta del bot y ejecuta:
+> ⚠️ Si ya clonaste el repositorio anteriormente y quieres bajar los cambios del último video, **no clones de nuevo**. Simplemente abre tu terminal en la carpeta del bot y ejecuta:
 
 ```bash
 git pull
@@ -73,7 +73,7 @@ Sigue estos pasos si es la primera vez que descargas el bot:
 1. **Clonar el repositorio:**
 
 ```bash
-git clone [https://github.com/choco-latito29/Discord-Tutorial-2026-ElAlda.git](https://github.com/choco-latito29/Discord-Tutorial-2026-ElAlda.git)
+git clone https://github.com/choco-latito29/Discord-Tutorial-2026-ElAlda.git
 
 ```
 
@@ -82,6 +82,7 @@ git clone [https://github.com/choco-latito29/Discord-Tutorial-2026-ElAlda.git](h
 
 ```bash
 cd Discord-Tutorial-2026-ElAlda
+
 npm install
 
 ```
