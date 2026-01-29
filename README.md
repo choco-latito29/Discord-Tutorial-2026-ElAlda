@@ -35,6 +35,7 @@ Lista curada de herramientas y documentación oficial utilizada en este proyecto
 
 ### 🤖 Discord.js (Librería)
 
+- **Paquete NPM:** [discord.js](https://www.npmjs.com/package/discord.js) - Descarga y versiones. Referencias básicas.
 - **Documentación:** [Discord.js Docs](https://discord.js.org/docs/packages/discord.js/main) - Referencia técnica completa.
 - **Guía Oficial:** [Discord.js Guide](https://discordjs.guide/) - Tutoriales y ejemplos paso a paso.
 - **Soporte:** [Discord.js Server](https://discord.gg/djs) - Servidor oficial de ayuda.
