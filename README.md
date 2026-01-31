@@ -53,6 +53,13 @@ Lista curada de herramientas y documentación oficial utilizada en este proyecto
 - **Intents Calculator:** [Discord Intents](https://discord-intents-calculator.vercel.app/) - Para calcular los privilegios necesarios.
 - **Permissions Calculator:** [Discord Permissions](https://discordapi.com/permissions.html) - Generador de enlaces de invitación.
 
+## 🛡️ Seguridad
+
+Nos tomamos muy en serio la seguridad. Si descubres una vulnerabilidad en este bot o en el código:
+
+1.  **NO** abras un Issue público (para no exponer el fallo a hackers).
+2.  Revisa nuestra [Política de Seguridad](./.github/SECURITY.md) para ver cómo reportarlo de forma privada.
+
 ## 🚀 Instalación y Uso
 
 ### 🔄 Actualización (Si ya tienes el bot)
