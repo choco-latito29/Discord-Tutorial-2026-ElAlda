@@ -145,5 +145,7 @@ node index.js
 
 ---
 
-Please give a ⭐️ if you like this project!
+<p align="center">
+  Please give a ⭐️ if you like this project!
 Copyright © 2026 [𝒞𝒽𝑜𝒸𝑜](https://github.com/choco-latito29).
+</p>
