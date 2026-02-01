@@ -13,6 +13,7 @@ Thumbs.db
 config.json
 token.js
 secrets.js
+credentials.txt
 
 # --- Logs ---
 npm-debug.log*

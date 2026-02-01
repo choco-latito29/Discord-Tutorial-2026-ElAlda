@@ -5,6 +5,20 @@
 ![Status](https://img.shields.io/badge/Estado-En_Desarrollo-orange?style=for-the-badge)
 ![License](https://img.shields.io/badge/Licencia-MIT-blue?style=for-the-badge)
 
+[![Soporte](https://img.shields.io/badge/Discord-Soporte-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.com/invite/bkx66vSHDD)
+[![YouTube](https://img.shields.io/badge/YouTube-ElAlda-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@elalda)
+[![Kick](https://img.shields.io/badge/Kick-ElAlda-53FC18?style=for-the-badge&logo=kick&logoColor=black)](https://kick.com/elaldass)
+
+![GitHub stars](https://img.shields.io/github/stars/choco-latito29/Discord-Tutorial-2026-ElAlda?style=for-the-badge&color=ffe900)
+![GitHub forks](https://img.shields.io/github/forks/choco-latito29/Discord-Tutorial-2026-ElAlda?style=for-the-badge&color=orange)
+![GitHub watchers](https://img.shields.io/github/watchers/choco-latito29/Discord-Tutorial-2026-ElAlda?style=for-the-badge&color=blueviolet)
+![GitHub repo size](https://img.shields.io/github/repo-size/choco-latito29/Discord-Tutorial-2026-ElAlda?style=for-the-badge&color=success)
+![Visitas](https://hits.sh/github.com/choco-latito29/Discord-Tutorial-2026-ElAlda.svg?style=for-the-badge&label=Visitas+Totales&extraCount=0&color=e24329)
+
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=5865F2&width=500&lines=Estado:+Transmitiendo+en+Kick+🟣;Viendo+a+servidores+y+usuarios+👀;Desarrollado+con+Discord.js+v14+🚀;¡No+olvides+dejar+tu+Estrella!+⭐;Ejecutando+en+Node.js+v22+🟢;Hecho+con+código+y+chocolate+🍫;24%2F7+Activo+(casi+siempre)+⚡" alt="Typing SVG" />
+</p>
+
 Bienvenido al repositorio oficial de mi bot de Discord. Este proyecto documenta mi progreso siguiendo la serie de tutoriales de **ELALDA** (2026), aplicando mejores prácticas, documentación robusta y código limpio.
 
 ## 👤 Autor
@@ -14,11 +28,29 @@ Bienvenido al repositorio oficial de mi bot de Discord. Este proyecto documenta 
 
 ## 📺 Progreso del Curso (ELALDA)
 
-| Episodio | Título / Tema                                                                           |     Estado     |
-| :------: | :-------------------------------------------------------------------------------------- | :------------: |
-|  **#0**  | [COMO CREAR UN BOT DE DISCORD DESDE](https://www.youtube.com/watch?v=kIWCxEzrSfo)       | ✅ Completado  |
-|  **#1**  | [COMO PONER PRESENCIA A TU BOT DE DISCORD](https://www.youtube.com/watch?v=ySilekiFeGk) | 🟠 En Progreso |
-|  **#2**  | _Próximamente..._                                                                       |  ⏳ Pendiente  |
+| Episodio | Título / Tema                                                                           |    Estado     |
+| :------: | :-------------------------------------------------------------------------------------- | :-----------: |
+|  **#0**  | [COMO CREAR UN BOT DE DISCORD DESDE 0](https://www.youtube.com/watch?v=kIWCxEzrSfo)     | ✅ Completado |
+|  **#1**  | [COMO PONER PRESENCIA A TU BOT DE DISCORD](https://www.youtube.com/watch?v=ySilekiFeGk) | ✅ Completado |
+|  **#2**  | _Próximamente..._                                                                       | ⏳ Pendiente  |
+
+### 📝 Temario y Funcionalidades por Episodio
+
+Resumen técnico de lo aprendido e implementado en cada video:
+
+#### 🎬 Episodio #0: Configuración y "Hola Mundo"
+
+- **Inicialización:** Creación del entorno Node.js (`npm init`) y estructura de archivos.
+- **Dependencias:** Instalación y configuración de `discord.js` (v14).
+- **Client:** Instanciación de la clase `Client` y gestión de `GatewayIntentBits`.
+- **Login:** Conexión segura con la API de Discord mediante Token.
+
+#### 🎬 Episodio #1: Presencia y Estado (Status)
+
+- **ActivityType:** Implementación de la clase para definir estados (_Playing, Watching, Listening..._).
+- **setActivity:** Método para mostrar mensajes personalizados en el perfil del bot.
+- **Datos Dinámicos:** Inyección de variables en el estado (Conteo de Servidores `guilds.cache.size` y Usuarios).
+- **Client User:** Manipulación de propiedades del usuario del bot (`tag`, `username`, `id`).
 
 ## 📚 Documentación y Recursos
 
@@ -102,7 +134,9 @@ npm install
 client.login("TOKEN_BOT_AQUI");
 ```
 
-Reemplaza `"TOKEN_BOT_AQUI"` con el token real de tu aplicación (obtenido en el Developer Portal). 4. **Encender el bot:**
+Reemplaza `"TOKEN_BOT_AQUI"` con el token real de tu aplicación (obtenido en el Developer Portal).
+
+4. **Encender el bot:**
 
 ```bash
 node index.js
@@ -113,3 +147,7 @@ node index.js
 
 Please give a ⭐️ if you like this project!
 Copyright © 2026 [𝒞𝒽𝑜𝒸𝑜](https://github.com/choco-latito29).
+
+```
+
+```
