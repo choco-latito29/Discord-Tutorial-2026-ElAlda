@@ -14,11 +14,11 @@ Bienvenido al repositorio oficial de mi bot de Discord. Este proyecto documenta 
 
 ## 📺 Progreso del Curso (ELALDA)
 
-| Episodio | Título / Tema                                                                              |     Estado     |
-| :------: | :----------------------------------------------------------------------------------------- | :------------: |
-|  **#0**  | [COMO CREAR UN BOT DE DISCORD DESDE #0](https://www.youtube.com/watch?v=kIWCxEzrSfo)       | ✅ Completado  |
-|  **#1**  | [COMO PONER PRESENCIA A TU BOT DE DISCORD #1](https://www.youtube.com/watch?v=ySilekiFeGk) | 🟠 En Progreso |
-|  **#2**  | _Próximamente..._                                                                          |  ⏳ Pendiente  |
+| Episodio | Título / Tema                                                                           |     Estado     |
+| :------: | :-------------------------------------------------------------------------------------- | :------------: |
+|  **#0**  | [COMO CREAR UN BOT DE DISCORD DESDE](https://www.youtube.com/watch?v=kIWCxEzrSfo)       | ✅ Completado  |
+|  **#1**  | [COMO PONER PRESENCIA A TU BOT DE DISCORD](https://www.youtube.com/watch?v=ySilekiFeGk) | 🟠 En Progreso |
+|  **#2**  | _Próximamente..._                                                                       |  ⏳ Pendiente  |
 
 ## 📚 Documentación y Recursos
 
