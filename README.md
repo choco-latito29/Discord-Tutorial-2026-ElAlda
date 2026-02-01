@@ -56,6 +56,8 @@ Resumen técnico de lo aprendido e implementado en cada video:
 
 Lista curada de herramientas y documentación oficial utilizada en este proyecto:
 
+- **📄 [Hoja de Trucos (Cheat Sheet)](./CHEATSHEET.md):** Lista rápida de variables y estados para copiar y pegar.
+
 ### 🧠 Lenguaje y Entorno
 
 - **JavaScript (ES6+):**
