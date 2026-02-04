@@ -1,8 +1,9 @@
 # Estos son los botones de patrocinio soportados
 github: # choco-latito29 (Si tuvieras GitHub Sponsors activado)
-custom: [
-    "https://paypal.me/TU_USUARIO_CHOCO", # 👈 Tu PayPal
-    "https://paypal.me/ElAldaOficial", # 👈 PayPal de ElAlda (Reemplaza con el real si lo tienes)
+custom:
+  [
+    "https://paypal.me/choquto21",
+    "https://paypal.me/elaldas",
     "https://kick.com/elaldass",
     "https://www.youtube.com/@elalda",
   ]
