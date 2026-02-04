@@ -1,0 +1,14 @@
+# Normalizar finales de línea
+* text=auto
+
+# Archivos específicos de Windows
+*.cmd text eol=crlf
+*.ps1 text eol=crlf
+
+# Archivos específicos de Linux/Mac
+*.sh text eol=lf
+
+# Lenguajes
+*.js text
+*.json text
+*.md text
