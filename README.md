@@ -32,7 +32,7 @@ Bienvenido al repositorio oficial de mi bot de Discord. Este proyecto documenta 
 | :------: | :-------------------------------------------------------------------------------------- | :-----------: |
 |  **#0**  | [COMO CREAR UN BOT DE DISCORD DESDE 0](https://www.youtube.com/watch?v=kIWCxEzrSfo)     | ✅ Completado |
 |  **#1**  | [COMO PONER PRESENCIA A TU BOT DE DISCORD](https://www.youtube.com/watch?v=ySilekiFeGk) | ✅ Completado |
-|  **#2**  | _Próximamente..._                                                                       | ⏳ Pendiente  |
+|  **#2**  | [SECRETOS Y SEGURIDAD: PROTEGIENDO TU BOT (.ENV)](https://www.youtube.com/@elalda)      | ⏳ Pendiente  |
 
 ### 📝 Temario y Funcionalidades por Episodio
 
@@ -51,6 +51,13 @@ Resumen técnico de lo aprendido e implementado en cada video:
 - **setActivity:** Método para mostrar mensajes personalizados en el perfil del bot.
 - **Datos Dinámicos:** Inyección de variables en el estado (Conteo de Servidores `guilds.cache.size` y Usuarios).
 - **Client User:** Manipulación de propiedades del usuario del bot (`tag`, `username`, `id`).
+
+#### 🎬 Episodio #2: Variables de Entorno y Seguridad (Próximamente)
+
+- **Dotenv:** Implementación de la librería `dotenv` para gestión de variables de entorno.
+- **Seguridad:** Uso de `.gitignore` para proteger el Token y credenciales sensibles.
+- **Arquitectura:** Separación de configuración estética (`config.json`) y secretos (`.env`).
+- **Validación:** Comprobación de existencia de claves API antes de iniciar el bot.
 
 ## 📚 Documentación y Recursos
 
