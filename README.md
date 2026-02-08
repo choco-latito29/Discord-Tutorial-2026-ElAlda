@@ -28,11 +28,11 @@ Bienvenido al repositorio oficial de mi bot de Discord. Este proyecto documenta 
 
 ## 📺 Progreso del Curso (ELALDA)
 
-| Episodio | Título / Tema                                                                           |    Estado     |
-| :------: | :-------------------------------------------------------------------------------------- | :-----------: |
-|  **#0**  | [COMO CREAR UN BOT DE DISCORD DESDE 0](https://www.youtube.com/watch?v=kIWCxEzrSfo)     | ✅ Completado |
-|  **#1**  | [COMO PONER PRESENCIA A TU BOT DE DISCORD](https://www.youtube.com/watch?v=ySilekiFeGk) | ✅ Completado |
-|  **#2**  | [SECRETOS Y SEGURIDAD: PROTEGIENDO TU BOT (.ENV)](https://www.youtube.com/@elalda)      | ⏳ Pendiente  |
+| Episodio | Título / Tema                                                                           |      Estado      |
+| :------: | :-------------------------------------------------------------------------------------- | :--------------: |
+|  **#1**  | [COMO CREAR UN BOT DE DISCORD DESDE 0](https://www.youtube.com/watch?v=kIWCxEzrSfo)     |  ✅ Completado   |
+|  **#2**  | [COMO PONER PRESENCIA A TU BOT DE DISCORD](https://www.youtube.com/watch?v=ySilekiFeGk) |  ✅ Completado   |
+|  **#3**  | [COMO PONER PRIVADO TU TOKEN (SEGURIDAD)](https://www.youtube.com/@elalda)              | 🛠️ En Desarrollo |
 
 ### 📝 Temario y Funcionalidades por Episodio
 
