@@ -141,17 +141,19 @@ npm install
 
 ```
 
-3. **Configuración (Token):**
-   _Importante: Este paso es temporal mientras seguimos el tutorial #0. Más adelante usaremos variables de entorno._
-   Abre el archivo `index.js` y localiza la última línea:
+3. **Configuración Segura (.env):**
+   Este proyecto ya utiliza el estándar de seguridad profesional.
+   - Abre el archivo llamado `.env` que está en la carpeta.
+   - Pega tu Token dentro de las comillas:
 
-```javascript
-client.login("TOKEN_BOT_AQUI");
-```
+   ```ini
+   TOKEN_DISCORD_BOT = "TU_TOKEN_REAL_AQUI"
+   ```
 
-Reemplaza `"TOKEN_BOT_AQUI"` con el token real de tu aplicación (obtenido en el Developer Portal).
+_(Nota: Si usas un archivo `.env.development` privado como enseñamos en el tutorial, asegúrate de configurarlo ahí)._
 
 4. **Encender el bot:**
+   Ahora que el token está seguro, inicia el bot:
 
 ```bash
 node index.js
