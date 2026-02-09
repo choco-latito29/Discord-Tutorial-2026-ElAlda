@@ -1,5 +1,5 @@
 const { Client, ActivityType } = require("discord.js");
-require("dotenv").config({ quiet: true, path: "" });
+require("dotenv").config({ quiet: true });
 require("colors");
 
 const client = new Client({ intents: 53608447 });
