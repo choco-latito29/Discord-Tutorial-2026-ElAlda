@@ -9,8 +9,9 @@ Thumbs.db
 
 # --- Seguridad y Secretos (¡CRÍTICO!) ---
 # Ignora cualquier archivo que pueda contener tu token
-.env
-config.json
+.env.development
+config.development.json
+config.development.js
 token.js
 secrets.js
 credentials.txt

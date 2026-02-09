@@ -28,31 +28,31 @@ Bienvenido al repositorio oficial de mi bot de Discord. Este proyecto documenta 
 
 ## 📺 Progreso del Curso (ELALDA)
 
-| Episodio | Título / Tema                                                                           |      Estado      |
-| :------: | :-------------------------------------------------------------------------------------- | :--------------: |
-|  **#1**  | [COMO CREAR UN BOT DE DISCORD DESDE 0](https://www.youtube.com/watch?v=kIWCxEzrSfo)     |  ✅ Completado   |
-|  **#2**  | [COMO PONER PRESENCIA A TU BOT DE DISCORD](https://www.youtube.com/watch?v=ySilekiFeGk) |  ✅ Completado   |
-|  **#3**  | [COMO PONER PRIVADO TU TOKEN (SEGURIDAD)](https://www.youtube.com/@elalda)              | 🛠️ En Desarrollo |
+| Episodio | Título / Tema                                                            |    Estado     |
+| :------: | :----------------------------------------------------------------------- | :-----------: |
+|  **#1**  | [COMO CREAR UN BOT DE DISCORD DESDE 0](https://youtu.be/kIWCxEzrSfo)     | ✅ Completado |
+|  **#2**  | [COMO PONER PRESENCIA A TU BOT DE DISCORD](https://youtu.be/ySilekiFeGk) | ✅ Completado |
+|  **#3**  | [COMO PONER PRIVADO TU TOKEN (SEGURIDAD)](https://youtu.be/k9PKx_At8To)  | ✅ Completado |
 
 ### 📝 Temario y Funcionalidades por Episodio
 
 Resumen técnico de lo aprendido e implementado en cada video:
 
-#### 🎬 Episodio #0: Configuración y "Hola Mundo"
+#### 🎬 Episodio #1: Configuración y "Hola Mundo"
 
 - **Inicialización:** Creación del entorno Node.js (`npm init`) y estructura de archivos.
 - **Dependencias:** Instalación y configuración de `discord.js` (v14).
 - **Client:** Instanciación de la clase `Client` y gestión de `GatewayIntentBits`.
 - **Login:** Conexión segura con la API de Discord mediante Token.
 
-#### 🎬 Episodio #1: Presencia y Estado (Status)
+#### 🎬 Episodio #2: Presencia y Estado (Status)
 
 - **ActivityType:** Implementación de la clase para definir estados (_Playing, Watching, Listening..._).
 - **setActivity:** Método para mostrar mensajes personalizados en el perfil del bot.
 - **Datos Dinámicos:** Inyección de variables en el estado (Conteo de Servidores `guilds.cache.size` y Usuarios).
 - **Client User:** Manipulación de propiedades del usuario del bot (`tag`, `username`, `id`).
 
-#### 🎬 Episodio #2: Variables de Entorno y Seguridad (Próximamente)
+#### 🎬 Episodio #3: Variables de Entorno y Seguridad
 
 - **Dotenv:** Implementación de la librería `dotenv` para gestión de variables de entorno.
 - **Seguridad:** Uso de `.gitignore` para proteger el Token y credenciales sensibles.
@@ -64,6 +64,7 @@ Resumen técnico de lo aprendido e implementado en cada video:
 Lista curada de herramientas y documentación oficial utilizada en este proyecto:
 
 - **📄 [Hoja de Trucos (Cheat Sheet)](./Docs/CHEATSHEET.md):** Lista rápida de variables y estados para copiar y pegar.
+- **🛡️ [Guía de Seguridad (Security Guide)](./Docs/SECURITY_GUIDE.md):** Aprende a configurar `.env`, `config.json` y `config.js` correctamente.
 
 ### 🧠 Lenguaje y Entorno
 
@@ -80,6 +81,11 @@ Lista curada de herramientas y documentación oficial utilizada en este proyecto
 - **Documentación:** [Discord.js Docs](https://discord.js.org/docs/packages/discord.js/main) - Referencia técnica completa.
 - **Guía Oficial:** [Discord.js Guide](https://discordjs.guide/) - Tutoriales y ejemplos paso a paso.
 - **Soporte:** [Discord.js Server](https://discord.gg/djs) - Servidor oficial de ayuda.
+
+### 🔐 Dotenv (Seguridad y Variables)
+
+- **Paquete NPM:** [dotenv](https://www.npmjs.com/package/dotenv) - Página oficial de descarga e instalación (`npm i dotenv`).
+- **Documentación:** [Dotenv GitHub](https://github.com/motdotla/dotenv#readme) - Referencia técnica, opciones de configuración y solución de problemas.
 
 ### 📝 Editores de Código (IDE)
 
