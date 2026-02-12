@@ -7,7 +7,7 @@ const client = new Client({ intents: 53608447 });
 client.once("clientReady", () => {
   console.log(`Bot encendido como: ${client.user.tag}`.green.bold);
 
-  client.user.setActivity("Nuevo video en Youtube/Twitch", {
+  client.user.setActivity("Nuevo video en Youtube", {
     type: ActivityType.Streaming,
     url: "https://www.twitch.tv/el_aldas",
   });
