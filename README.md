@@ -59,6 +59,36 @@ Resumen técnico de lo aprendido e implementado en cada video:
 - **Arquitectura:** Separación de configuración estética (`config.json`) y secretos (`.env`).
 - **Validación:** Comprobación de existencia de claves API antes de iniciar el bot.
 
+## 📂 Estructura del Proyecto
+
+Organización profesional de archivos para mantener el código limpio y escalable:
+
+```javascript
+📦 ALDA-TUTORIAL-2026
+ ┣ 📂 .github                  # Carpeta de configuración de GitHub
+ ┃ ┣ 📂 ISSUE_TEMPLATE         # Plantillas para reportes de errores
+ ┃ ┃ ┣ 📜 bug_report.md
+ ┃ ┃ ┗ 📜 feature_request.md
+ ┃ ┣ 📜 CODE_OF_CONDUCT.md     # Normas de comunidad
+ ┃ ┣ 📜 CONTRIBUTING.md        # Guía para colaboradores
+ ┃ ┣ 📜 FUNDING.yml            # Botón de "Sponsor"
+ ┃ ┣ 📜 pull_request_template.md # Plantilla de Pull Request
+ ┃ ┗ 📜 SECURITY.md            # Política de seguridad
+ ┣ 📂 Docs                     # Documentación y Guías
+ ┃ ┣ 📜 CHEATSHEET.md
+ ┃ ┗ 📜 SECURITY_GUIDE.md
+ ┣ 📜 .editorconfig            # Estilos de código
+ ┣ 📜 .env                     # Plantilla de variables (Sin claves reales)
+ ┣ 📜 .gitattributes           # Configuración de Git
+ ┣ 📜 .gitignore               # Archivos ignorados (Seguridad)
+ ┣ 📜 config.js                # Configuración avanzada (JS)
+ ┣ 📜 config.json              # Configuración básica (JSON)
+ ┣ 📜 index.js                 # Archivo principal (Main)
+ ┣ 📜 LICENSE                  # Licencia MIT
+ ┣ 📜 package.json             # Dependencias del proyecto
+ ┗ 📜 README.md                # Este archivo
+```
+
 ## 📚 Documentación y Recursos
 
 Lista curada de herramientas y documentación oficial utilizada en este proyecto:
