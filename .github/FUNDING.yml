@@ -1,3 +1,9 @@
-# Estos son los botones de patrocinio soportados
+# ==========================================
+# 💖 CONFIGURACIÓN DE PATROCINIO - CHOCÓ FACTORY
+# ==========================================
+
+# GitHub Sponsors: Tu perfil oficial aprobado
 github: [choco-latito29]
-custom: ["PayPal", "https://paypal.me/choquto21"]
+
+# PayPal: Al usar el link directo, GitHub mostrará el icono automáticamente
+custom:
