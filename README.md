@@ -33,6 +33,7 @@ Bienvenido al repositorio oficial de mi bot de Discord. Este proyecto documenta 
 |  **#1**  | [COMO CREAR UN BOT DE DISCORD DESDE 0](https://youtu.be/kIWCxEzrSfo)     | ✅ Completado |
 |  **#2**  | [COMO PONER PRESENCIA A TU BOT DE DISCORD](https://youtu.be/ySilekiFeGk) | ✅ Completado |
 |  **#3**  | [COMO PONER PRIVADO TU TOKEN (SEGURIDAD)](https://youtu.be/k9PKx_At8To)  | ✅ Completado |
+|  **#4**  | [COMO CREAR SLASHCOMMANDS HANDLER](https://youtu.be/DpPQBi4ar_k)         | ✅ Completado |
 
 ### 📝 Temario y Funcionalidades por Episodio
 
@@ -59,6 +60,14 @@ Resumen técnico de lo aprendido e implementado en cada video:
 - **Arquitectura:** Separación de configuración estética (`config.json`) y secretos (`.env`).
 - **Validación:** Comprobación de existencia de claves API antes de iniciar el bot.
 
+#### 🎬 Episodio #4: Slash Commands Handler
+
+- **Colecciones:** Uso de `Collection` de Discord.js para mapear y almacenar comandos en memoria.
+- **File System (fs):** Lectura dinámica de carpetas y filtrado de archivos `.js` usando `fs.readdirSync`.
+- **Event Handler:** Modularización de eventos (`ClientReady`, `interactionCreate`) en la carpeta `/Events`.
+- **Slash Handler:** Registro automático de comandos con `application.commands.set()` hacia la API de Discord.
+- **Builders:** Creación profesional de comandos e interfaces usando `SlashCommandBuilder`, `ContainerBuilder`, `TextDisplayBuilder` y `MessageFlags`.
+
 ## 📂 Estructura del Proyecto
 
 Organización profesional de archivos para mantener el código limpio y escalable:
@@ -77,14 +86,22 @@ Organización profesional de archivos para mantener el código limpio y escalabl
  ┣ 📂 Docs                     # Documentación y Guías
  ┃ ┣ 📜 CHEATSHEET.md
  ┃ ┗ 📜 SECURITY_GUIDE.md
+ ┣ 📂 Events                   # ⚡ Eventos dinámicos del cliente
+ ┃ ┗ 📜 interactionCreate.js   # Manejador de interacciones
+ ┣ 📂 Handlers                 # ⚙️ Cargadores automáticos
+ ┃ ┗ 📜 slashHandler.js        # Lógica para registrar comandos
+ ┣ 📂 SlashCommands            # 💻 Comandos del bot por categorías
+ ┃ ┗ 📂 Utils                  # Categoría: Utilidad
+ ┃   ┗ 📜 ping.js              # Comando de latencia (Ejemplo)
  ┣ 📜 .editorconfig            # Estilos de código
  ┣ 📜 .env                     # Plantilla de variables (Sin claves reales)
  ┣ 📜 .gitattributes           # Configuración de Git
  ┣ 📜 .gitignore               # Archivos ignorados (Seguridad)
  ┣ 📜 config.js                # Configuración avanzada (JS)
  ┣ 📜 config.json              # Configuración básica (JSON)
- ┣ 📜 index.js                 # Archivo principal (Main)
+ ┣ 📜 index.js                 # 🧠 Archivo principal (Main)
  ┣ 📜 LICENSE                  # Licencia MIT
+ ┣ 📜 package-lock.json        # Árbol de dependencias exactas
  ┣ 📜 package.json             # Dependencias del proyecto
  ┗ 📜 README.md                # Este archivo
 ```
