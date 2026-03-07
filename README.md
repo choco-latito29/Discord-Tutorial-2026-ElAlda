@@ -28,12 +28,14 @@ Bienvenido al repositorio oficial de mi bot de Discord. Este proyecto documenta 
 
 ## 📺 Progreso del Curso (ELALDA)
 
-| Episodio | Título / Tema                                                            |    Estado     |
-| :------: | :----------------------------------------------------------------------- | :-----------: |
-|  **#1**  | [COMO CREAR UN BOT DE DISCORD DESDE 0](https://youtu.be/kIWCxEzrSfo)     | ✅ Completado |
-|  **#2**  | [COMO PONER PRESENCIA A TU BOT DE DISCORD](https://youtu.be/ySilekiFeGk) | ✅ Completado |
-|  **#3**  | [COMO PONER PRIVADO TU TOKEN (SEGURIDAD)](https://youtu.be/k9PKx_At8To)  | ✅ Completado |
-|  **#4**  | [COMO CREAR SLASHCOMMANDS HANDLER](https://youtu.be/DpPQBi4ar_k)         | ✅ Completado |
+| Episodio | Título / Tema                                                                 |    Estado     |
+| :------: | :---------------------------------------------------------------------------- | :-----------: |
+|  **#1**  | [COMO CREAR UN BOT DE DISCORD DESDE 0](https://youtu.be/kIWCxEzrSfo)          | ✅ Completado |
+|  **#2**  | [COMO PONER PRESENCIA A TU BOT DE DISCORD](https://youtu.be/ySilekiFeGk)      | ✅ Completado |
+|  **#3**  | [COMO PONER PRIVADO TU TOKEN (SEGURIDAD)](https://youtu.be/k9PKx_At8To)       | ✅ Completado |
+|  **#4**  | [COMO CREAR SLASHCOMMANDS HANDLER](https://youtu.be/DpPQBi4ar_k)              | ✅ Completado |
+|  **#5**  | [COMO CREAR TU BOT DE DISCORD DESDE TU CELULAR](https://youtu.be/6p0Ea5Qt_JU) | ✅ Completado |
+|  **#6**  | [COMO CREAR EVENT HANDLER](https://youtu.be/phi6cHBCTlY)                      | ✅ Completado |
 
 ### 📝 Temario y Funcionalidades por Episodio
 
@@ -68,6 +70,20 @@ Resumen técnico de lo aprendido e implementado en cada video:
 - **Slash Handler:** Registro automático de comandos con `application.commands.set()` hacia la API de Discord.
 - **Builders:** Creación profesional de comandos e interfaces usando `SlashCommandBuilder`, `ContainerBuilder`, `TextDisplayBuilder` y `MessageFlags`.
 
+#### 🎬 Episodio #5: Bot de Discord en Celular (Android)
+
+- **Entorno Móvil:** Instalación y configuración de aplicaciones (como WebCode) para programar localmente desde un dispositivo Android.
+- **Gestión de Archivos:** Uso de editores externos para manipular archivos sin soporte nativo, como `package.json` y el archivo de secretos `.env`.
+- **Terminal Integrada:** Uso de la consola móvil para la instalación de dependencias (`npm install discord.js`, `dotenv`) y el encendido del bot (`node index.js`).
+- **Archivos Ocultos:** Configuración del File Manager para permitir la visualización y edición de archivos del sistema como `.env`.
+
+#### 🎬 Episodio #6: Event Handler
+
+- **Event Handler:** Creación del cargador automático de eventos (`eventHandler.js`) para modularizar la estructura.
+- **File System (fs):** Uso de `readdirSync` para leer subcarpetas y archivos `.js` de manera dinámica y anidada.
+- **Optimización:** Limpieza del archivo principal `index.js` delegando la carga a la función `loadEvents()`.
+- **Eventos Dinámicos:** Configuración automática de `client.on` (múltiples veces) y `client.once` (una sola vez) basándose en las propiedades de cada archivo de evento.
+
 ## 📂 Estructura del Proyecto
 
 Organización profesional de archivos para mantener el código limpio y escalable:
@@ -87,9 +103,11 @@ Organización profesional de archivos para mantener el código limpio y escalabl
  ┃ ┣ 📜 CHEATSHEET.md
  ┃ ┗ 📜 SECURITY_GUIDE.md
  ┣ 📂 Events                   # ⚡ Eventos dinámicos del cliente
- ┃ ┗ 📜 interactionCreate.js   # Manejador de interacciones
+ ┃ ┗ 📂 Interaction            # Categoría de evento: Interacciones
+ ┃   ┗ 📜 interactionCreate.js # Manejador de interacciones
  ┣ 📂 Handlers                 # ⚙️ Cargadores automáticos
  ┃ ┗ 📜 slashHandler.js        # Lógica para registrar comandos
+ ┃ ┣ 📜 eventHandler.js        # Lógica para registrar eventos
  ┣ 📂 SlashCommands            # 💻 Comandos del bot por categorías
  ┃ ┗ 📂 Utils                  # Categoría: Utilidad
  ┃   ┗ 📜 ping.js              # Comando de latencia (Ejemplo)
@@ -140,6 +158,11 @@ Lista curada de herramientas y documentación oficial utilizada en este proyecto
 - [VS Code Insiders](https://code.visualstudio.com/insiders/) - Versión beta con las últimas novedades.
 - [Sublime Text](https://www.sublimetext.com/) - Ligero y rápido.
 - [Zed](https://zed.dev/) - Editor de alto rendimiento colaborativo.
+
+### 📱 Desarrollo en Móvil (Android)
+
+- **[WebCode (Play Store)](https://play.google.com/store/apps/details?id=com.qamar.webcode):** IDE móvil gratuito con terminal integrada para ejecutar Node.js y descargar paquetes NPM.
+- **[Markor / Editor Externo (GitHub)](https://github.com/gsantner/markor/releases):** Editor de texto avanzado sin anuncios (link en la descripción del video #5 de ELALDA) necesario para editar archivos `.json` y `.env` en Android.
 
 ### 🛠️ Herramientas de Desarrollo
 

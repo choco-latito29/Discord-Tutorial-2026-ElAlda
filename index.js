@@ -7,17 +7,9 @@ const client = new Client({ intents: 53608447 });
 
 client.slashCommands = new Collection();
 
-for (const file of fs
-  .readdirSync("./Events")
-  .filter((f) => f.endsWith(".js"))) {
-  const event = require(`./Events/${file}`);
-
-  if (event.once) {
-    client.once(event.name, (...args) => event.execute(...args, client));
-  } else {
-    client.on(event.name, (...args) => event.execute(...args, client));
-  }
-}
+(async () => {
+  await require("./Handlers/eventHandler").loadEvents(client);
+})();
 
 client.once("clientReady", async () => {
   console.log(`Bot encendido como: ${client.user.tag}`.green.bold);
