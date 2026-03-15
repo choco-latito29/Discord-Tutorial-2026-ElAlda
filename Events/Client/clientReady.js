@@ -11,7 +11,7 @@ module.exports = {
   async execute(client) {
     console.info(`Bot encendido como: ${client.user.tag}`.green.bold);
 
-    await require("./Handlers/slashHandler").loadSlash(client);
+    await require("../../Handlers/slashHandler").loadSlash(client);
 
     const estados = [
       {
