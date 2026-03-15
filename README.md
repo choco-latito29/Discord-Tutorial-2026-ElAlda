@@ -28,14 +28,15 @@ Bienvenido al repositorio oficial de mi bot de Discord. Este proyecto documenta 
 
 ## 📺 Progreso del Curso (ELALDA)
 
-| Episodio | Título / Tema                                                                 |    Estado     |
-| :------: | :---------------------------------------------------------------------------- | :-----------: |
-|  **#1**  | [COMO CREAR UN BOT DE DISCORD DESDE 0](https://youtu.be/kIWCxEzrSfo)          | ✅ Completado |
-|  **#2**  | [COMO PONER PRESENCIA A TU BOT DE DISCORD](https://youtu.be/ySilekiFeGk)      | ✅ Completado |
-|  **#3**  | [COMO PONER PRIVADO TU TOKEN (SEGURIDAD)](https://youtu.be/k9PKx_At8To)       | ✅ Completado |
-|  **#4**  | [COMO CREAR SLASHCOMMANDS HANDLER](https://youtu.be/DpPQBi4ar_k)              | ✅ Completado |
-|  **#5**  | [COMO CREAR TU BOT DE DISCORD DESDE TU CELULAR](https://youtu.be/6p0Ea5Qt_JU) | ✅ Completado |
-|  **#6**  | [COMO CREAR EVENT HANDLER](https://youtu.be/phi6cHBCTlY)                      | ✅ Completado |
+| Episodio | Título / Tema                                                                     |    Estado     |
+| :------: | :-------------------------------------------------------------------------------- | :-----------: |
+|  **#1**  | [COMO CREAR UN BOT DE DISCORD DESDE 0](https://youtu.be/kIWCxEzrSfo)              | ✅ Completado |
+|  **#2**  | [COMO PONER PRESENCIA A TU BOT DE DISCORD](https://youtu.be/ySilekiFeGk)          | ✅ Completado |
+|  **#3**  | [COMO PONER PRIVADO TU TOKEN (SEGURIDAD)](https://youtu.be/k9PKx_At8To)           | ✅ Completado |
+|  **#4**  | [COMO CREAR SLASHCOMMANDS HANDLER](https://youtu.be/DpPQBi4ar_k)                  | ✅ Completado |
+|  **#5**  | [COMO CREAR TU BOT DE DISCORD DESDE TU CELULAR](https://youtu.be/6p0Ea5Qt_JU)     | ✅ Completado |
+|  **#6**  | [COMO CREAR EVENT HANDLER](https://youtu.be/phi6cHBCTlY)                          | ✅ Completado |
+|  **#7**  | [COMO PONER ESTADO A TU BOT DE DISCORD ACTUALIZADO](https://youtu.be/ZsOfadjKUg4) | ✅ Completado |
 
 ### 📝 Temario y Funcionalidades por Episodio
 
@@ -84,6 +85,13 @@ Resumen técnico de lo aprendido e implementado en cada video:
 - **Optimización:** Limpieza del archivo principal `index.js` delegando la carga a la función `loadEvents()`.
 - **Eventos Dinámicos:** Configuración automática de `client.on` (múltiples veces) y `client.once` (una sola vez) basándose en las propiedades de cada archivo de evento.
 
+#### 🎬 Episodio #7: Estados y Presencia Dinámica
+
+- **Evento Ready:** Migración de la configuración de presencia desde `index.js` hacia un archivo de evento dedicado (`clientReady.js` en `Events/Client/`), ejecutado mediante `client.once`.
+- **Rotación Cíclica:** Creación de un Array (lista) de estados y uso de `setInterval` para alternar la presencia del bot automáticamente cada determinado tiempo (ej. 5 segundos).
+- **Tipos de Actividad (ActivityType):** Configuración de múltiples tipos de vista: _Playing_ (Jugando), _Listening_ (Escuchando), _Watching_ (Viendo), _Competing_ (Compitiendo), _Custom_ (Estado personalizado) y _Streaming_ (con soporte nativo para URLs de Twitch).
+- **Color de Estado (Status):** Control del indicador visual del bot usando `online` (Verde), `idle` (Ausente), `dnd` (No Molestar) e `invisible` (Apagado/Desconectado pero funcional).
+
 ## 📂 Estructura del Proyecto
 
 Organización profesional de archivos para mantener el código limpio y escalable:
@@ -103,11 +111,13 @@ Organización profesional de archivos para mantener el código limpio y escalabl
  ┃ ┣ 📜 CHEATSHEET.md
  ┃ ┗ 📜 SECURITY_GUIDE.md
  ┣ 📂 Events                   # ⚡ Eventos dinámicos del cliente
+ ┃ ┣ 📂 Client                 # Categoría de evento: Cliente/Bot
+ ┃ ┃ ┗ 📜 clientReady.js       # Estado y presencia dinámica
  ┃ ┗ 📂 Interaction            # Categoría de evento: Interacciones
  ┃   ┗ 📜 interactionCreate.js # Manejador de interacciones
  ┣ 📂 Handlers                 # ⚙️ Cargadores automáticos
- ┃ ┗ 📜 slashHandler.js        # Lógica para registrar comandos
  ┃ ┣ 📜 eventHandler.js        # Lógica para registrar eventos
+ ┃ ┗ 📜 slashHandler.js        # Lógica para registrar comandos
  ┣ 📂 SlashCommands            # 💻 Comandos del bot por categorías
  ┃ ┗ 📂 Utils                  # Categoría: Utilidad
  ┃   ┗ 📜 ping.js              # Comando de latencia (Ejemplo)
@@ -197,7 +207,7 @@ Sigue estos pasos si es la primera vez que descargas el bot:
 1. **Clonar el repositorio:**
 
 ```bash
-git clone https://github.com/choco-latito29/Discord-Tutorial-2026-ElAlda.git
+git clone --depth 1 https://github.com/choco-latito29/Discord-Tutorial-2026-ElAlda.git
 
 ```
 
