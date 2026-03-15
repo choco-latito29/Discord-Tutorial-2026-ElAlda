@@ -36,7 +36,7 @@ const estados = [
   {
     name: "ElAlda en Twitch",
     type: ActivityType.Streaming,
-    url: "[https://www.twitch.tv/elaldass](https://www.twitch.tv/elaldass)",
+    url: "https://www.twitch.tv/elaldass",
     status: "online",
   },
   { name: "Barriendo mi casa", type: ActivityType.Custom, status: "idle" },
