@@ -15,6 +15,7 @@ config.development.js
 token.js
 secrets.js
 credentials.txt
+Database/
 
 # --- Logs ---
 npm-debug.log*
