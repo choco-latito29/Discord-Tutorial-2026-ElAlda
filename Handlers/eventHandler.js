@@ -11,6 +11,8 @@ module.exports = {
         .forEach((file) => {
           const event = require(process.cwd() + `/Events/${folder}/${file}`);
 
+          if (!event.name) return;
+
           if (event.once) {
             client.once(event.name, (...args) =>
               event.execute(...args, client),

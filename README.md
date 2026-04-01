@@ -28,16 +28,17 @@ Bienvenido al repositorio oficial de mi bot de Discord. Este proyecto documenta 
 
 ## 📺 Progreso del Curso (ELALDA)
 
-| Episodio | Título / Tema                                                                      |    Estado     |
-| :------: | :--------------------------------------------------------------------------------- | :-----------: |
-|  **#1**  | [COMO CREAR UN BOT DE DISCORD DESDE 0](https://youtu.be/kIWCxEzrSfo)               | ✅ Completado |
-|  **#2**  | [COMO PONER PRESENCIA A TU BOT DE DISCORD](https://youtu.be/ySilekiFeGk)           | ✅ Completado |
-|  **#3**  | [COMO PONER PRIVADO TU TOKEN (SEGURIDAD)](https://youtu.be/k9PKx_At8To)            | ✅ Completado |
-|  **#4**  | [COMO CREAR SLASHCOMMANDS HANDLER](https://youtu.be/DpPQBi4ar_k)                   | ✅ Completado |
-|  **#5**  | [COMO CREAR TU BOT DE DISCORD DESDE TU CELULAR](https://youtu.be/6p0Ea5Qt_JU)      | ✅ Completado |
-|  **#6**  | [COMO CREAR EVENT HANDLER](https://youtu.be/phi6cHBCTlY)                           | ✅ Completado |
-|  **#7**  | [COMO PONER ESTADO A TU BOT DE DISCORD ACTUALIZADO](https://youtu.be/ZsOfadjKUg4)  | ✅ Completado |
-|  **#8**  | [COMO CREAR SISTEMA DE REGISTRO PARA BOT DE DISCORD](https://youtu.be/ay1sMlnVafc) | ✅ Completado |
+| Episodio | Título / Tema                                                                                |    Estado     |
+| :------: | :------------------------------------------------------------------------------------------- | :-----------: |
+|  **#1**  | [COMO CREAR UN BOT DE DISCORD DESDE 0](https://youtu.be/kIWCxEzrSfo)                         | ✅ Completado |
+|  **#2**  | [COMO PONER PRESENCIA A TU BOT DE DISCORD](https://youtu.be/ySilekiFeGk)                     | ✅ Completado |
+|  **#3**  | [COMO PONER PRIVADO TU TOKEN (SEGURIDAD)](https://youtu.be/k9PKx_At8To)                      | ✅ Completado |
+|  **#4**  | [COMO CREAR SLASHCOMMANDS HANDLER](https://youtu.be/DpPQBi4ar_k)                             | ✅ Completado |
+|  **#5**  | [COMO CREAR TU BOT DE DISCORD DESDE TU CELULAR](https://youtu.be/6p0Ea5Qt_JU)                | ✅ Completado |
+|  **#6**  | [COMO CREAR EVENT HANDLER](https://youtu.be/phi6cHBCTlY)                                     | ✅ Completado |
+|  **#7**  | [COMO PONER ESTADO A TU BOT DE DISCORD ACTUALIZADO](https://youtu.be/ZsOfadjKUg4)            | ✅ Completado |
+|  **#8**  | [COMO CREAR SISTEMA DE REGISTRO PARA BOT DE DISCORD (CANALES)](https://youtu.be/ay1sMlnVafc) | ✅ Completado |
+|  **#9**  | [COMO CREAR SISTEMA DE REGISTRO DE ROLES](https://youtu.be/qov28OS2YIA)                      | ✅ Completado |
 
 ### 📝 Temario y Funcionalidades por Episodio
 
@@ -93,12 +94,13 @@ Resumen técnico de lo aprendido e implementado en cada video:
 - **Tipos de Actividad (ActivityType):** Configuración de múltiples tipos de vista: _Playing_ (Jugando), _Listening_ (Escuchando), _Watching_ (Viendo), _Competing_ (Compitiendo), _Custom_ (Estado personalizado) y _Streaming_ (con soporte nativo para URLs de Twitch).
 - **Color de Estado (Status):** Control del indicador visual del bot usando `online` (Verde), `idle` (Ausente), `dnd` (No Molestar) e `invisible` (Apagado/Desconectado pero funcional).
 
-#### 🎬 Episodio #8: Sistema de Registros (Logs) y Base de Datos Local
+#### 🎬 Episodios #8, #9: Sistema de Registros Avanzado (Logs)
 
-- **Base de Datos Local:** Creación de un gestor de archivos (`dbManager.js`) usando el módulo nativo `fs` de Node.js para guardar configuraciones por servidor en formato `.json` de forma dinámica.
-- **Comandos de Configuración (Setup):** Creación del comando `/setlogs` asegurado con permisos estrictos (`PermissionFlagsBits.Administrator`) y opciones limitadas solo a canales de texto (`ChannelType.GuildText`).
-- **Auditoría de Canales:** Implementación de eventos de monitoreo (`channelCreate`, `channelUpdate`, `channelDelete`) combinados con `AuditLogEvent` para detectar _qué_ se modificó y _quién_ realizó la acción, enviando un `Embed` detallado.
-- **Seguridad de Datos:** Actualización del `.gitignore` para evitar que las bases de datos locales y los registros privados de los servidores se suban al repositorio público de GitHub.
+Implementación de un sistema de auditoría integral utilizando una base de datos local dinámica (`dbManager.js` con el módulo `fs`) protegida por el `.gitignore`. El sistema está dividido en tres fases:
+
+- **Parte 1 (Canales - Ep. #8):** Comando `/setlogs` para administradores. Monitoreo de eventos `channelCreate`, `channelUpdate` y `channelDelete` acoplados con `AuditLogEvent`.
+
+- **Parte 2 (Roles - Ep. #9):** Detección de cambios específicos en roles (Nombre, Color Hexadecimal, Mención, Separación y Permisos) implementando un sistema de prevención de spam (Cooldowns con `Map`).
 
 ## 📂 Estructura del Proyecto
 
@@ -125,13 +127,18 @@ Organización profesional de archivos para mantener el código limpio y escalabl
  ┃ ┣ 📂 Guild                  # Categoría: Servidor (Logs)
  ┃ ┃ ┣ 📜 channelCreate.js     # Evento: Canal creado
  ┃ ┃ ┣ 📜 channelDelete.js     # Evento: Canal eliminado
- ┃ ┃ ┗ 📜 channelUpdate.js     # Evento: Canal editado
+ ┃ ┃ ┣ 📜 channelUpdate.js     # Evento: Canal editado
+ ┃ ┃ ┣ 📜 roleCreate.js        # Evento: Rol creado
+ ┃ ┃ ┣ 📜 roleDelete.js        # Evento: Rol eliminado
+ ┃ ┃ ┗ 📜 roleUpdate.js        # Evento: Rol editado
  ┃ ┗ 📂 Interaction            # Categoría de evento: Interacciones
  ┃   ┗ 📜 interactionCreate.js # Manejador de interacciones
  ┣ 📂 Handlers                 # ⚙️ Cargadores automáticos
  ┃ ┣ 📜 eventHandler.js        # Lógica para registrar eventos
  ┃ ┗ 📜 slashHandler.js        # Lógica para registrar comandos
  ┣ 📂 SlashCommands            # 💻 Comandos del bot por categorías
+ ┃ ┣ 📂 Setup                  # Categoría: Configuración
+ ┃ ┃ ┗ 📜 setlogs.js           # Comando de logs
  ┃ ┗ 📂 Utils                  # Categoría: Utilidad
  ┃   ┗ 📜 ping.js              # Comando de latencia (Ejemplo)
  ┣ 📜 .editorconfig            # Estilos de código
