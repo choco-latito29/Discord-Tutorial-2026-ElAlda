@@ -13,6 +13,7 @@ Thumbs.db
 config.development.json
 config.development.js
 token.js
+xd.js
 secrets.js
 credentials.txt
 Database/
