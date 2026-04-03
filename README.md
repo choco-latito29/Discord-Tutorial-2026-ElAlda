@@ -103,8 +103,6 @@ Implementación de un sistema de auditoría integral utilizando una base de dato
 - **Parte 2 (Roles - Ep. #9):** Detección de cambios específicos en roles (Nombre, Color Hexadecimal, Mención, Separación y Permisos) implementando un sistema de prevención de spam (Cooldowns con `Map`).
 - **Parte 3 (Mensajes - Ep. #10):** Monitoreo de actividad de texto (`messageUpdate`, `messageDelete`, `messageDeleteBulk`). Implementación de lógica dinámica para galerías de imágenes (`MediaGalleryBuilder`) y detección de enlaces/archivos.
 
-- **Parte 2 (Roles - Ep. #9):** Detección de cambios específicos en roles (Nombre, Color Hexadecimal, Mención, Separación y Permisos) implementando un sistema de prevención de spam (Cooldowns con `Map`).
-
 ## 📂 Estructura del Proyecto
 
 Organización profesional de archivos para mantener el código limpio y escalable:
