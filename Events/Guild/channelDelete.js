@@ -34,28 +34,32 @@ module.exports = {
     const executor = logEntry ? logEntry.executor : "Desconocido";
 
     const container = new ContainerBuilder()
-      .setAccentColor(0xffa500)
+      .setAccentColor(0xe74c3c)
       .addTextDisplayComponents(
-        new TextDisplayBuilder().setContent("## 🚮 Canal Eliminado"),
+        new TextDisplayBuilder().setContent("## ❌ Canal Eliminado"),
       )
       .addSeparatorComponents(new SeparatorBuilder().setDivider(true))
       .addTextDisplayComponents(
         new TextDisplayBuilder().setContent(
-          `Se ha eliminado el canal: **${channel.name}**\n\n` +
-            `😀 Eliminado por: ${executor}\n` +
-            `⚙️ Id del Canal: \`\`${channel.id}\`\``,
+          `Se ha detectado la eliminación permanente de un canal del servidor. Aquí están los últimos datos conocidos:\n\n` +
+            `**📄 Información del Canal Eliminado:**\n` +
+            `> 🏷️ **Nombre:** ${channel.name}\n` +
+            `> 🆔 **ID:** \`${channel.id}\`\n\n` +
+            `**🛠️ Detalles de la Acción:**\n\n` +
+            `> 🗑️ **Eliminado por:** ${executor}\n` +
+            `> 📁 **Categoría anterior:** ${channel.parentId ? `<#${channel.parentId}>` : "Ninguna (Raíz del servidor)"}`,
         ),
       )
       .addSeparatorComponents(new SeparatorBuilder().setDivider(true))
       .addTextDisplayComponents(
         new TextDisplayBuilder().setContent(
-          `**Time:** ${new Date().toLocaleString()}`,
+          `⏱️ **Fecha de eliminación:** <t:${Math.floor(Date.now() / 1000)}:F> (<t:${Math.floor(Date.now() / 1000)}:R>)`,
         ),
       );
 
     await logChannel
       .send({
-        flags: MessageFlags.IsComponentsV2 | MessageFlags.Ephemeral,
+        flags: MessageFlags.IsComponentsV2,
         components: [container],
         allowedMentions: { repliedUser: false },
       })

@@ -39,6 +39,7 @@ Bienvenido al repositorio oficial de mi bot de Discord. Este proyecto documenta 
 |  **#7**  | [COMO PONER ESTADO A TU BOT DE DISCORD ACTUALIZADO](https://youtu.be/ZsOfadjKUg4)            | ✅ Completado |
 |  **#8**  | [COMO CREAR SISTEMA DE REGISTRO PARA BOT DE DISCORD (CANALES)](https://youtu.be/ay1sMlnVafc) | ✅ Completado |
 |  **#9**  | [COMO CREAR SISTEMA DE REGISTRO DE ROLES](https://youtu.be/qov28OS2YIA)                      | ✅ Completado |
+| **#10**  | [COMO CREAR SISTEMA DE REGISTRO DE MENSAJES (FIN)](https://youtu.be/HvxT1YkEnGE)             | ✅ Completado |
 
 ### 📝 Temario y Funcionalidades por Episodio
 
@@ -94,11 +95,13 @@ Resumen técnico de lo aprendido e implementado en cada video:
 - **Tipos de Actividad (ActivityType):** Configuración de múltiples tipos de vista: _Playing_ (Jugando), _Listening_ (Escuchando), _Watching_ (Viendo), _Competing_ (Compitiendo), _Custom_ (Estado personalizado) y _Streaming_ (con soporte nativo para URLs de Twitch).
 - **Color de Estado (Status):** Control del indicador visual del bot usando `online` (Verde), `idle` (Ausente), `dnd` (No Molestar) e `invisible` (Apagado/Desconectado pero funcional).
 
-#### 🎬 Episodios #8, #9: Sistema de Registros Avanzado (Logs)
+#### 🎬 Episodios #8, #9 y #10: Sistema de Registros Avanzado (Logs)
 
 Implementación de un sistema de auditoría integral utilizando una base de datos local dinámica (`dbManager.js` con el módulo `fs`) protegida por el `.gitignore`. El sistema está dividido en tres fases:
 
 - **Parte 1 (Canales - Ep. #8):** Comando `/setlogs` para administradores. Monitoreo de eventos `channelCreate`, `channelUpdate` y `channelDelete` acoplados con `AuditLogEvent`.
+- **Parte 2 (Roles - Ep. #9):** Detección de cambios específicos en roles (Nombre, Color Hexadecimal, Mención, Separación y Permisos) implementando un sistema de prevención de spam (Cooldowns con `Map`).
+- **Parte 3 (Mensajes - Ep. #10):** Monitoreo de actividad de texto (`messageUpdate`, `messageDelete`, `messageDeleteBulk`). Implementación de lógica dinámica para galerías de imágenes (`MediaGalleryBuilder`) y detección de enlaces/archivos.
 
 - **Parte 2 (Roles - Ep. #9):** Detección de cambios específicos en roles (Nombre, Color Hexadecimal, Mención, Separación y Permisos) implementando un sistema de prevención de spam (Cooldowns con `Map`).
 
@@ -128,6 +131,9 @@ Organización profesional de archivos para mantener el código limpio y escalabl
  ┃ ┃ ┣ 📜 channelCreate.js     # Evento: Canal creado
  ┃ ┃ ┣ 📜 channelDelete.js     # Evento: Canal eliminado
  ┃ ┃ ┣ 📜 channelUpdate.js     # Evento: Canal editado
+ ┃ ┃ ┣ 📜 messageDelete.js     # Evento: Mensaje eliminado
+ ┃ ┃ ┣ 📜 messageDeleteBulk.js # Evento: Borrado masivo
+ ┃ ┃ ┣ 📜 messageUpdate.js     # Evento: Mensaje editado
  ┃ ┃ ┣ 📜 roleCreate.js        # Evento: Rol creado
  ┃ ┃ ┣ 📜 roleDelete.js        # Evento: Rol eliminado
  ┃ ┃ ┗ 📜 roleUpdate.js        # Evento: Rol editado
