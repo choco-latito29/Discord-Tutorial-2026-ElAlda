@@ -18,6 +18,9 @@ secrets.js
 credentials.txt
 Database/
 
+# Ignoramos nustro comando de pruebas
+SlashCommands/Test/
+
 # --- Logs ---
 npm-debug.log*
 yarn-debug.log*
