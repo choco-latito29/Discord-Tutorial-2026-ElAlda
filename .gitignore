@@ -1,6 +1,6 @@
 # --- Dependencias ---
 node_modules/
-package-lock.json # Opcional: algunos prefieren subirlo, pero en proyectos personales a veces estorba si cambias de PC
+package-lock.json
 
 # --- Sistema y Entorno ---
 .DS_Store
