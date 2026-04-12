@@ -13,14 +13,15 @@ module.exports = {
     .setIntegrationTypes(0),
   /**
    *
-   * @param {import("discord.js").Interaction} interaction
+   * @param {import("discord.js").ChatInputCommandInteraction} interaction
    * @param {import("discord.js").Client} client
    */
   async execute(interaction, client) {
     const latency = Date.now() - interaction.createdTimestamp;
+    const randomColor = Math.floor(Math.random() * 16777215);
 
     const container = new ContainerBuilder()
-      .setAccentColor(0x00ff00)
+      .setAccentColor(randomColor)
       .addTextDisplayComponents(
         new TextDisplayBuilder().setContent(
           `Pong! Latencia: \`\`${latency} ms\`\``,

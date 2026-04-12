@@ -1,5 +1,5 @@
 const { Client, Collection } = require("discord.js");
-require("dotenv").config({ quiet: true });
+require("dotenv").config({ quiet: true, path: ".env.development" });
 require("colors");
 
 const client = new Client({ intents: 53608447 });
