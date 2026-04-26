@@ -28,3 +28,12 @@ Resumen técnico de la serie de tutoriales de **ELALDA** (2026) para el desarrol
 - **Episodio #11 (Comando Love/Ship):** \* Instalación de la librería `@napi-rs/canvas` (Alternativa moderna, rápida y basada en Rust frente al canvas tradicional).
   - Manipulación de imágenes: Avatar circular, bordes y superposición de capas.
   - Generación de porcentajes aleatorios y envío de buffers mediante `AttachmentBuilder`.
+
+### ⚙️ Fase 5: Sistemas de Servidor y Bases de Datos
+
+- **Episodio #12 (Sistema de Autorol Dinámico):**
+  - Estructuración avanzada con `addSubcommand` (`add`, `view`, `delete`).
+  - Implementación de **Autocomplete Interaction** para filtrado reactivo de opciones (separación entre usuarios y bots) e identificación de roles fantasma.
+  - Ciberseguridad de Discord: Bloqueo del rol predeterminado `@everyone`, filtrado de permisos críticos (`Administrator`) y validación de jerarquías (`highest.position`).
+  - Integración de persistencia de datos (JSON) usando manejadores personalizados (`getData` y `setData`).
+  - Diseño de interfaces UI/UX Premium utilizando `ContainerBuilder`, `TextDisplayBuilder` y `SeparatorBuilder`.
