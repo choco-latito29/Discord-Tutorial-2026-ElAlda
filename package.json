@@ -29,9 +29,9 @@
     "node": ">=18.0.0"
   },
   "dependencies": {
-    "@napi-rs/canvas": "^0.1.99",
+    "@napi-rs/canvas": "^0.1.100",
     "colors": "^1.4.0",
-    "discord.js": "^14.26.3",
+    "discord.js": "^14.26.4",
     "dotenv": "^17.4.2"
   }
 }

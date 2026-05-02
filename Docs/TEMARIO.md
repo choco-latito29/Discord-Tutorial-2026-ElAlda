@@ -46,3 +46,11 @@ Resumen técnico de la serie de tutoriales de **ELALDA** (2026) para el desarrol
   - **Despliegue de Código (Upload):** Compresión del proyecto local en formato `.RAR` o `.ZIP` para luego ser subida a través del panel Pterodactyl/Web de la plataforma.
   - **Optimización de Dependencias:** Exclusión estricta de la carpeta `node_modules` y `package-lock.json` antes de la compresión para reducir el peso del archivo, evitar desgaste de ancho de banda y prevenir errores de compatibilidad entre el entorno de desarrollo y el servidor de producción.
   - Descompresión en la nube, arranque del entorno Node.js y ejecución en consola 24/7.
+
+### 🌐 Fase 7: Gestión Global y Monitoreo del Bot
+
+- **Episodio #14 (Logs de Servidores y Comando Leave):**
+  - **Monitoreo de Expansión:** Implementación de los eventos `guildCreate` y `guildDelete` para rastrear en tiempo real cuándo el bot es invitado o expulsado de un servidor.
+  - **Auditoría Centralizada Extrema:** Creación de alertas dinámicas con colores hex (`0x57F287` para ingresos, `0xED4245` para salidas). Extracción de métricas de caché, datos de seguridad (Niveles de Verificación, Filtros NSFW, 2FA) y contadores estructurales (Canales, Roles, Emojis, Boosts).
+  - **Control de Acceso Restringido (Owner Only):** Desarrollo del comando de administración `/leave` con validación estricta por User ID (Hardcoded) para evitar usos no autorizados por terceros.
+  - **Ejecución Sigilosa:** Uso de `MessageFlags.Ephemeral` (Mensajes Fantasma) para forzar la salida del bot de servidores específicos de manera invisible y controlada.
