@@ -1,14 +1,15 @@
-# --- Dependencias ---
+# --- Dependencies ---
 node_modules/
 package-lock.json
 
-# --- Sistema y Entorno ---
+# --- System & Environment ---
 .DS_Store
 Thumbs.db
 .vscode/
+*.log
 
-# --- Seguridad y Secretos (¡CRÍTICO!) ---
-# Ignora cualquier archivo que pueda contener tu token
+# --- Security & Secrets (CRITICAL) ---
+# Ignore files containing REAL sensitive data or tokens
 .env.development
 config.development.json
 config.development.js
@@ -16,12 +17,16 @@ token.js
 xd.js
 secrets.js
 credentials.txt
+
+# --- Persistence & Databases ---
+# Local database folder ignored to prevent leaking user data[cite: 4]
 Database/
 
-# Ignoramos nustro comando de pruebas
+# --- Testing & Development ---
+# Laboratory for experimental commands[cite: 4]
 SlashCommands/Test/
 
-# --- Logs ---
+# --- Error Logs ---
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
