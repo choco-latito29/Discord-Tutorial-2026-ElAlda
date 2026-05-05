@@ -1,32 +1,32 @@
 ---
-name: 🐛 Reporte de Error
-about: Crea un reporte para ayudarnos a mejorar el bot
+name: 🐛 Bug Report
+about: Create a report to help us improve the bot
 title: "[BUG] "
 labels: bug
 assignees: ""
 ---
 
-**Describe el error**
-Una descripción clara y concisa de cuál es el problema.
+**Describe the bug**
+A clear and concise description of what the bug is.
 
-**Pasos para reproducir**
-Pasos para que podamos ver el error nosotros mismos:
+**Steps to reproduce**
+Steps to reproduce the behavior:
 
-1. Ejecutar el comando '...'
-2. Hacer clic en '...'
-3. Ver el error
+1. Run the command '...'
+2. Click on '...'
+3. See error
 
-**Comportamiento esperado**
-Una descripción clara de lo que esperabas que sucediera.
+**Expected behavior**
+A clear and concise description of what you expected to happen.
 
-**Capturas de pantalla**
-Si aplica, añade capturas de pantalla para ayudar a explicar tu problema.
+**Screenshots**
+If applicable, add screenshots to help explain your problem.
 
-**Entorno (por favor completa):**
+**Environment (please complete the following information):**
 
-- SO: [ej. Windows 10]
-- Node.js versión: [ej. v22.0.0]
-- Discord.js versión: [ej. v14.16.0]
+- OS: [e.g. Windows 11, Ubuntu 22.04]
+- Node.js version: [e.g. v22.0.0]
+- Discord.js version: [e.g. v14.16.0]
 
-**Contexto adicional**
-Cualquier otro contexto sobre el problema aquí.
+**Additional context**
+Add any other context about the problem here.
