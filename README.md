@@ -1,19 +1,18 @@
 # 🤖 Discord Bot - 2026 Series (ElAlda)
 
 ![Discord.js](https://img.shields.io/badge/Discord.js-v14-5865F2?style=for-the-badge&logo=discord&logoColor=white)
-![Node.js](https://img.shields.io/badge/Node.js-v24+-339933?style=for-the-badge&logo=node.js&logoColor=white)
-![Status](https://img.shields.io/badge/Estado-En_Desarrollo-orange?style=for-the-badge)
-![License](https://img.shields.io/badge/Licencia-MIT-blue?style=for-the-badge)
+![Node.js](https://img.shields.io/badge/Node.js-v22+-339933?style=for-the-badge&logo=node.js&logoColor=white)
+![Status](https://img.shields.io/badge/Status-In_Development-orange?style=for-the-badge)
+![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)
 
-[![Soporte](https://img.shields.io/badge/Discord-Soporte-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.com/invite/bkx66vSHDD)
+[![Support](https://img.shields.io/badge/Discord-Support-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.com/invite/bkx66vSHDD)
 [![YouTube](https://img.shields.io/badge/YouTube-ElAlda-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@elalda)
 [![Kick](https://img.shields.io/badge/Kick-ElAlda-53FC18?style=for-the-badge&logo=kick&logoColor=black)](https://kick.com/elaldass)
 
 ![GitHub stars](https://img.shields.io/github/stars/choco-latito29/Discord-Tutorial-2026-ElAlda?style=for-the-badge&color=ffe900)
 ![GitHub forks](https://img.shields.io/github/forks/choco-latito29/Discord-Tutorial-2026-ElAlda?style=for-the-badge&color=orange)
-![GitHub watchers](https://img.shields.io/github/watchers/choco-latito29/Discord-Tutorial-2026-ElAlda?style=for-the-badge&color=blueviolet)
 ![GitHub repo size](https://img.shields.io/github/repo-size/choco-latito29/Discord-Tutorial-2026-ElAlda?style=for-the-badge&color=success)
-![Visitas](https://hits.sh/github.com/choco-latito29/Discord-Tutorial-2026-ElAlda.svg?style=for-the-badge&label=Visitas+Totales&extraCount=0&color=e24329)
+![Visits](https://hits.sh/github.com/choco-latito29/Discord-Tutorial-2026-ElAlda.svg?style=for-the-badge&label=Total+Visits&extraCount=0&color=e24329)
 
 <p align="center">
   <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=5865F2&width=500&lines=Estado:+Transmitiendo+en+Kick+🟣;Viendo+a+servidores+y+usuarios+👀;Desarrollado+con+Discord.js+v14+🚀;¡No+olvides+dejar+tu+Estrella!+⭐;Ejecutando+en+Node.js+v22+🟢;Hecho+con+código+y+chocolate+🍫;24%2F7+Activo+(casi+siempre)+⚡" alt="Typing SVG" />
