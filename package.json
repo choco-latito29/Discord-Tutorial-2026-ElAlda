@@ -1,9 +1,11 @@
 {
   "name": "alda-tutorial",
   "version": "1.0.0",
-  "description": "Bot de Discord oficial siguiendo la serie de tutoriales 2026 de ElAlda.",
+  "description": "Official Discord Bot following the 2026 tutorial series by ElAlda.",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
