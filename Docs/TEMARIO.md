@@ -1,56 +1,57 @@
-# 📝 Temario y Funcionalidades por Episodio
+# 📝 Course Syllabus & Features by Episode
 
-Resumen técnico de la serie de tutoriales de **ELALDA** (2026) para el desarrollo de bots en Discord.js v14.
+Technical summary of the **ELALDA** tutorial series (2026) for developing bots in Discord.js v14.
 
 ---
 
-### 🟢 Fase 1: Cimientos y Configuración
+### 🟢 Phase 1: Foundations & Configuration
 
-- **Episodio #1:** Inicialización con `npm init`, instalación de `discord.js` y gestión de `GatewayIntentBits`.
-- **Episodio #2:** Manejo de `ActivityType` y `setActivity` para estados dinámicos.
-- **Episodio #3:** Seguridad con `dotenv` y archivos `.env` protegidos por `.gitignore`.
-- **Episodio #4:** Construcción de un Handler de Slash Commands profesional usando `Collection` y `fs`.
-- **Episodio #5:** Entorno de desarrollo móvil en Android (WebCode + Markor).
+- **Episode #1:** Initialization with `npm init`, installation of `discord.js`, and management of `GatewayIntentBits`.
+- **Episode #2:** Handling `ActivityType` and `setActivity` for dynamic statuses.
+- **Episode #3:** Security using `dotenv` and protected `.env` files via `.gitignore`.
+- **Episode #4:** Building a professional Slash Command Handler using `Collection` and `fs`.
+- **Episode #5:** Mobile development environment on Android (WebCode + Markor).
 
-### ⚡ Fase 2: Arquitectura y Escalabilidad
+### ⚡ Phase 2: Architecture & Scalability
 
-- **Episodio #6:** Implementación de un Event Handler modular (`loadEvents`).
-- **Episodio #7:** Sistema de estados rotativos automáticos con `setInterval`.
+- **Episode #6:** Implementation of a modular Event Handler (`loadEvents`).
+- **Episode #7:** Automatic rotating status system using `setInterval`.
 
-### 🛡️ Fase 3: Sistema de Auditoría (Saga de Logs)
+### 🛡️ Phase 3: Audit System (Logs Saga)
 
-- **Episodio #8 (Canales):** Comando `/setlogs` y detección de creación/edición/borrado de canales.
-- **Episodio #9 (Roles):** Detección de cambios en roles (color, posición, permisos) con sistema de cooldowns.
-- **Episodio #10 (Mensajes):** Registro de `messageUpdate`, `messageDelete` y `messageDeleteBulk` con soporte para galerías de imágenes (`MediaGalleryBuilder`).
+- **Episode #8 (Channels):** `/setlogs` command and detection of channel creation, editing, and deletion.
+- **Episode #9 (Roles):** Detection of role changes (color, position, permissions) with a cooldown system.
+- **Episode #10 (Messages):** Logging of `messageUpdate`, `messageDelete`, and `messageDeleteBulk` with support for image galleries (`MediaGalleryBuilder`).
 
-### 🎨 Fase 4: Comandos de Diversión y Canvas
+### 🎨 Phase 4: Fun Commands & Canvas
 
-- **Episodio #11 (Comando Love/Ship):** \* Instalación de la librería `@napi-rs/canvas` (Alternativa moderna, rápida y basada en Rust frente al canvas tradicional).
-  - Manipulación de imágenes: Avatar circular, bordes y superposición de capas.
-  - Generación de porcentajes aleatorios y envío de buffers mediante `AttachmentBuilder`.
+- **Episode #11 (Love/Ship Command):**
+  - Installation of the `@napi-rs/canvas` library (A modern, fast, Rust-based alternative to traditional canvas).
+  - Image manipulation: Circular avatars, borders, and layer overlays.
+  - Generation of random percentages and sending buffers via `AttachmentBuilder`.
 
-### ⚙️ Fase 5: Sistemas de Servidor y Bases de Datos
+### ⚙️ Phase 5: Server Systems & Databases
 
-- **Episodio #12 (Sistema de Autorol Dinámico):**
-  - Estructuración avanzada con `addSubcommand` (`add`, `view`, `delete`).
-  - Implementación de **Autocomplete Interaction** para filtrado reactivo de opciones (separación entre usuarios y bots) e identificación de roles fantasma.
-  - Ciberseguridad de Discord: Bloqueo del rol predeterminado `@everyone`, filtrado de permisos críticos (`Administrator`) y validación de jerarquías (`highest.position`).
-  - Integración de persistencia de datos (JSON) usando manejadores personalizados (`getData` y `setData`).
-  - Diseño de interfaces UI/UX Premium utilizando `ContainerBuilder`, `TextDisplayBuilder` y `SeparatorBuilder`.
+- **Episode #12 (Dynamic Auto-role System):**
+  - Advanced structuring with `addSubcommand` (`add`, `view`, `delete`).
+  - Implementation of **Autocomplete Interaction** for reactive option filtering (separating users from bots) and identifying "ghost" roles.
+  - Discord Cybersecurity: Blocking the default `@everyone` role, filtering critical permissions (`Administrator`), and validating role hierarchy (`highest.position`).
+  - Data persistence integration (JSON) using custom handlers (`getData` and `setData`).
+  - Premium UI/UX interface design using `ContainerBuilder`, `TextDisplayBuilder`, and `SeparatorBuilder`.
 
-### 🚀 Fase 6: Despliegue y Producción (Hosting)
+### 🚀 Phase 6: Deployment & Production (Hosting)
 
-- **Episodio #13 (Hosting GRATIS 24/7 con Bot-Hosting):**
-  - Configuración inicial de servidor en **Bot-Hosting.net** mediante autenticación con Discord.
-  - **Gestión de Recursos (Uptime):** Administración del sistema de economía virtual de la plataforma (reclamo de monedas cada 3 horas) para costear la renovación automática y evitar la suspensión del servicio.
-  - **Despliegue de Código (Upload):** Compresión del proyecto local en formato `.RAR` o `.ZIP` para luego ser subida a través del panel Pterodactyl/Web de la plataforma.
-  - **Optimización de Dependencias:** Exclusión estricta de la carpeta `node_modules` y `package-lock.json` antes de la compresión para reducir el peso del archivo, evitar desgaste de ancho de banda y prevenir errores de compatibilidad entre el entorno de desarrollo y el servidor de producción.
-  - Descompresión en la nube, arranque del entorno Node.js y ejecución en consola 24/7.
+- **Episode #13 (FREE 24/7 Hosting with Bot-Hosting):**
+  - Initial server setup on **Bot-Hosting.net** via Discord authentication.
+  - **Resource Management (Uptime):** Managing the platform's virtual economy system (claiming coins every 3 hours) to cover automatic renewal and avoid service suspension.
+  - **Code Deployment (Upload):** Compressing the local project in `.RAR` or `.ZIP` format for upload through the platform's Pterodactyl/Web panel.
+  - **Dependency Optimization:** Strict exclusion of the `node_modules` folder and `package-lock.json` before compression to reduce file weight and prevent compatibility errors between development and production environments.
+  - Cloud extraction, Node.js environment startup, and 24/7 console execution.
 
-### 🌐 Fase 7: Gestión Global y Monitoreo del Bot
+### 🌐 Phase 7: Global Management & Bot Monitoring
 
-- **Episodio #14 (Logs de Servidores y Comando Leave):**
-  - **Monitoreo de Expansión:** Implementación de los eventos `guildCreate` y `guildDelete` para rastrear en tiempo real cuándo el bot es invitado o expulsado de un servidor.
-  - **Auditoría Centralizada Extrema:** Creación de alertas dinámicas con colores hex (`0x57F287` para ingresos, `0xED4245` para salidas). Extracción de métricas de caché, datos de seguridad (Niveles de Verificación, Filtros NSFW, 2FA) y contadores estructurales (Canales, Roles, Emojis, Boosts).
-  - **Control de Acceso Restringido (Owner Only):** Desarrollo del comando de administración `/leave` con validación estricta por User ID (Hardcoded) para evitar usos no autorizados por terceros.
-  - **Ejecución Sigilosa:** Uso de `MessageFlags.Ephemeral` (Mensajes Fantasma) para forzar la salida del bot de servidores específicos de manera invisible y controlada.
+- **Episode #14 (Server Logs & Leave Command):**
+  - **Expansion Monitoring:** Implementation of `guildCreate` and `guildDelete` events to track in real-time when the bot is invited to or removed from a server.
+  - **Extreme Centralized Audit:** Creation of dynamic alerts with hex colors (`0x57F287` for joins, `0xED4245` for leaves). Extraction of cache metrics, security data (Verification Levels, NSFW Filters, 2FA), and structural counters (Channels, Roles, Emojis, Boosts).
+  - **Restricted Access Control (Owner Only):** Development of the `/leave` admin command with strict validation by User ID (Hardcoded) to prevent unauthorized use by third parties.
+  - **Stealth Execution:** Use of `MessageFlags.Ephemeral` (Ghost Messages) to force the bot to leave specific servers invisibly and in a controlled manner.

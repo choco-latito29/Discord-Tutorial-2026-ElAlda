@@ -1,75 +1,73 @@
-# 🛡️ Guía de Seguridad y Configuración
+# 🛡️ Security & Configuration Guide
 
-En este proyecto exploramos **3 métodos** para manejar la configuración y las credenciales (tokens, claves API) de tu Bot de Discord.
+In this project, we explore **3 methods** to handle the configuration and credentials (tokens, API keys) of your Discord Bot.
 
-El objetivo principal es evitar subir **Secretos** a GitHub para prevenir hackeos.
+The main goal is to avoid uploading **Secrets** to GitHub to prevent hacks.
 
-> ⚠️ **IMPORTANTE:** Los archivos incluidos en este repositorio ([.env](../.env), [config.json](../config.json), [config.js](../config.js)) son **PLANTILLAS**. Debes editarlos con tus propios datos reales.
+> ⚠️ **IMPORTANT:** The files included in this repository ([.env](../.env), [config.json](../config.json), [config.js](../config.js)) are **TEMPLATES**. You must edit them with your own real data.
 
 ---
 
-## 🥇 Método 1: Variables de Entorno (.env)
+## 🥇 Method 1: Environment Variables (.env)
 
-**Estado:** ✅ _Recomendado (Estándar de la Industria)_
+**Status:** ✅ _Recommended (Industry Standard)_
 
-Es la forma más segura. Las variables viven en el entorno del sistema operativo, no en el código. Se usa la librería [dotenv](https://www.npmjs.com/package/dotenv).
+This is the most secure way. Variables live in the operating system's environment, not in the code. It uses the [dotenv](https://www.npmjs.com/package/dotenv) library.
 
-### 1. Edita el Archivo ([.env](../.env))
+### 1. Edit the File ([.env](../.env))
 
-En el repositorio encontrarás un archivo `.env` de ejemplo. Ábrelo y reemplaza los textos por tus claves reales.
+In the repository, you will find an example `.env` file. Open it and replace the text with your real keys.
 
-_Nota: Si vas a subir tu propia versión del bot a GitHub, asegúrate de que tu `.env` con datos reales esté en el `.gitignore`._
+_Note: If you are going to upload your own version of the bot to GitHub, make sure your .env with real data is inside the .gitignore file._
 
 ```ini
-# Edita los valores dentro de las comillas
-TOKEN_DISCORD_BOT = "AQUI VA EL TOKEN DEL BOT"
+# Edit the values inside the quotes
+TOKEN_DISCORD_BOT = "YOUR BOT TOKEN GOES HERE"
 
-KEY = "AQUI VA CUALQUIER OTRA CLAVE SECRETA QUE QUIERAS GUARDAR"
+KEY = "ANY OTHER SECRET KEY YOU WANT TO SAVE GOES HERE"
 
 ```
 
-### 2. Importación ([index.js](../index.js))
+### 2. Importing ([index.js](../index.js))
 
-Así es como el bot lee estas variables protegidas:
+This is how the bot reads these protected variables:
 
 ```javascript
 const { Client, ActivityType } = require("discord.js");
 require("dotenv").config({ quiet: true });
 require("colors");
 
-const { Client } = require("discord.js");
 const client = new Client({ intents: 53608447 });
 
 client.once("clientReady", () => {
-  console.log(`Bot encendido como: ${client.user.tag}`.green.bold);
+  console.log(`Bot logged in as: ${client.user.tag}`.green.bold);
 
-  client.user.setActivity("Nuevo video en Youtube/Twitch", {
+  client.user.setActivity("New video on Youtube/Twitch", {
     type: ActivityType.Streaming,
-    url: "https://www.twitch.tv/el_aldas",
+    url: "[https://www.twitch.tv/el_aldas](https://www.twitch.tv/el_aldas)",
   });
 });
 
 client.login(process.env.TOKEN_DISCORD_BOT);
 ```
 
-### 3. Otra forma de importación ([index.js](../index.js))
+### 3. Another way to import ([index.js](../index.js))
 
-> ⚙️ (Opcional) Si usas un archivo separado para desarrollo:
+> ⚙️ (Optional) If you use a separate file for development:
 
 ```javascript
 const { Client, ActivityType } = require("discord.js");
 require("dotenv").config({ quiet: true, path: ".env.development" });
 require("colors");
 
-const { Client } = require("discord.js");
 const client = new Client({ intents: 53608447 });
 
 client.once("clientReady", () => {
-  console.log(`Bot encendido como: ${client.user.tag}`.green.bold);
+  console.log(`Bot logged in as: ${client.user.tag}`.green.bold);
 
-  client.user.setActivity("Nuevo video en Youtube/Twitch", {
+  client.user.setActivity("New video on Youtube/Twitch", {
     type: ActivityType.Streaming,
-    url: "https://www.twitch.tv/el_aldas",
+    url: "[https://www.twitch.tv/el_aldas](https://www.twitch.tv/el_aldas)",
   });
 });
 
@@ -78,41 +76,40 @@ client.login(process.env.TOKEN_DISCORD_BOT);
 
 ---
 
-## 🥈 Método 2: Archivo JSON (`config.json`)
+## 🥈 Method 2: JSON File (`config.json`)
 
-**Estado:** ⚠️ _Útil para Configuración Pública (Colores, Prefijos)_
+**Status:** ⚠️ _Useful for Public Configuration (Colors, Prefixes)_
 
-Es un formato estático muy limpio y organizado, pero **NO permite comentarios**.
+It's a very clean and organized static format, but it **DOES NOT allow comments**.
 
-### 1. Edita el Archivo ([config.json](../config.json))
+### 1. Edit the File ([config.json](../config.json))
 
-Modifica el archivo existente con tus preferencias.
+Modify the existing file with your preferences.
 
 ```json
 {
-  "TOKEN_DISCORD_BOT": "AQUI VA EL TOKEN DEL BOT",
-  "KEY": "AQUI VA CUALQUIER OTRA CLAVE SECRETA QUE QUIERAS GUARDAR"
+  "TOKEN_DISCORD_BOT": "YOUR BOT TOKEN GOES HERE",
+  "KEY": "ANY OTHER SECRET KEY YOU WANT TO SAVE GOES HERE"
 }
 ```
 
-### 2. Importación ([index.js](../index.js))
+### 2. Importing ([index.js](../index.js))
 
-Node.js permite importar archivos JSON directamente como si fueran objetos.
+Node.js allows importing JSON files directly as if they were objects.
 
 ```javascript
 const { Client, ActivityType } = require("discord.js");
 const config = require("./config.json");
 require("colors");
 
-const { Client } = require("discord.js");
 const client = new Client({ intents: 53608447 });
 
 client.once("clientReady", () => {
-  console.log(`Bot encendido como: ${client.user.tag}`.green.bold);
+  console.log(`Bot logged in as: ${client.user.tag}`.green.bold);
 
-  client.user.setActivity("Nuevo video en Youtube/Twitch", {
+  client.user.setActivity("New video on Youtube/Twitch", {
     type: ActivityType.Streaming,
-    url: "https://www.twitch.tv/el_aldas",
+    url: "[https://www.twitch.tv/el_aldas](https://www.twitch.tv/el_aldas)",
   });
 });
 
@@ -121,39 +118,38 @@ client.login(config.TOKEN_DISCORD_BOT);
 
 ---
 
-## 🥉 Método 3: Módulo JavaScript (`config.js`)
+## 🥉 Method 3: JavaScript Module (`config.js`)
 
-**Estado:** ⚠️ _Versátil (Permite lógica y comentarios)_
+**Status:** ⚠️ _Versatile (Allows logic and comments)_
 
-A diferencia del JSON, aquí puedes usar código real de JavaScript y escribir explicaciones.
+Unlike JSON, here you can use real JavaScript code and write explanations.
 
-### 1. Edita el Archivo ([config.js](../config.js))
+### 1. Edit the File ([config.js](../config.js))
 
-Al igual que los anteriores, reemplaza los valores de ejemplo.
+Just like the previous ones, replace the example values.
 
 ```javascript
 module.exports = {
-  TOKEN_DISCORD_BOT: "AQUI VA EL TOKEN DEL BOT",
-  KEY: "AQUI VA CUALQUIER OTRA CLAVE SECRETA QUE QUIERAS GUARDAR",
+  TOKEN_DISCORD_BOT: "YOUR BOT TOKEN GOES HERE",
+  KEY: "ANY OTHER SECRET KEY YOU WANT TO SAVE GOES HERE",
 };
 ```
 
-### 2. Importación ([index.js](../index.js))
+### 2. Importing ([index.js](../index.js))
 
 ```javascript
 const { Client, ActivityType } = require("discord.js");
 const { TOKEN_DISCORD_BOT } = require("./config.js");
 require("colors");
 
-const { Client } = require("discord.js");
 const client = new Client({ intents: 53608447 });
 
 client.once("clientReady", () => {
-  console.log(`Bot encendido como: ${client.user.tag}`.green.bold);
+  console.log(`Bot logged in as: ${client.user.tag}`.green.bold);
 
-  client.user.setActivity("Nuevo video en Youtube/Twitch", {
+  client.user.setActivity("New video on Youtube/Twitch", {
     type: ActivityType.Streaming,
-    url: "https://www.twitch.tv/el_aldas",
+    url: "[https://www.twitch.tv/el_aldas](https://www.twitch.tv/el_aldas)",
   });
 });
 
@@ -162,13 +158,11 @@ client.login(TOKEN_DISCORD_BOT);
 
 ---
 
-## 🆚 Tabla Comparativa
+## 🆚 Comparison Table
 
-| Característica     | `.env`                | `config.json`          | `config.js`                  |
-| ------------------ | --------------------- | ---------------------- | ---------------------------- |
-| **Seguridad**      | ⭐⭐⭐⭐⭐ (Alto)     | ⭐⭐ (Bajo)            | ⭐⭐ (Bajo)                  |
-| **Comentarios**    | ✅ Sí (`#`)           | ❌ No                  | ✅ Sí (`//`)                 |
-| **Tipos de datos** | Solo Texto (String)   | Texto, Números, Arrays | Todo (Funciones, Objetos...) |
-| **Uso Ideal**      | **Tokens y Secretos** | Colores, textos fijos  | Lógica compleja de config    |
-
----
+| Feature        | `.env`               | `config.json`         | `config.js`                        |
+| -------------- | -------------------- | --------------------- | ---------------------------------- |
+| **Security**   | ⭐⭐⭐⭐⭐ (High)    | ⭐⭐ (Low)            | ⭐⭐ (Low)                         |
+| **Comments**   | ✅ Yes (`#`)         | ❌ No                 | ✅ Yes (`//`)                      |
+| **Data types** | Text Only (String)   | Text, Numbers, Arrays | Everything (Functions, Objects...) |
+| **Ideal Use**  | **Tokens & Secrets** | Colors, static texts  | Complex config logic               |

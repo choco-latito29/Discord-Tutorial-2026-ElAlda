@@ -1,80 +1,80 @@
-# ⚡ Hoja de Trucos (Discord.js v14)
+# ⚡ Cheat Sheet (Discord.js v14)
 
-Referencia rápida de las variables y estados utilizados en el curso **ELALDA 2026**.
+Quick reference for the variables and statuses used in the **ELALDA 2026** course.
 
-## 🎭 Estados del Bot (ActivityType)
+## 🎭 Bot Statuses (ActivityType)
 
-Para usar estos estados, impórtalos con `const { ActivityType } = require("discord.js");`
+To use these statuses, import them with `const { ActivityType } = require("discord.js");`
 
-| Código                   | Descripción      | Ejemplo Visual                        |
-| :----------------------- | :--------------- | :------------------------------------ |
-| `ActivityType.Playing`   | 🎮 Juega a...    | _Juega a Visual Studio Code_          |
-| `ActivityType.Watching`  | 👀 Ve...         | _Ve a los usuarios_                   |
-| `ActivityType.Listening` | 🎧 Escucha...    | _Escucha Spotify_                     |
-| `ActivityType.Competing` | 🏆 Compite en... | _Compite en Torneo_                   |
-| `ActivityType.Streaming` | 🟣 Transmite...  | _En directo en Twitch_ (Requiere URL) |
-| `ActivityType.Custom`    | 💬 Personalizado | _(Solo texto y emoji, sin prefijo)_   |
+| Code                     | Description        | Visual Example                     |
+| :----------------------- | :----------------- | :--------------------------------- |
+| `ActivityType.Playing`   | 🎮 Playing...      | _Playing Visual Studio Code_       |
+| `ActivityType.Watching`  | 👀 Watching...     | _Watching the users_               |
+| `ActivityType.Listening` | 🎧 Listening to... | _Listening to Spotify_             |
+| `ActivityType.Competing` | 🏆 Competing in... | _Competing in Tournament_          |
+| `ActivityType.Streaming` | 🟣 Streaming...    | _Live on Twitch_ (Requires URL)    |
+| `ActivityType.Custom`    | 💬 Custom          | _(Only text and emoji, no prefix)_ |
 
-## 🟢 Colores de Estado (Status)
+## 🟢 Status Colors (Status)
 
-Controlan el color del circulito que aparece en la foto de perfil del bot.
+These control the color of the small circle that appears on the bot's profile picture.
 
-| Estado en Código | Color / Vista | Descripción                                            |
-| :--------------- | :-----------: | :----------------------------------------------------- |
-| `online`         |   🟢 Verde    | El bot está en línea y funcionando normalmente.        |
-| `idle`           |  🌙 Naranja   | Ausente o inactivo.                                    |
-| `dnd`            |    🔴 Rojo    | No molestar (Do Not Disturb).                          |
-| `invisible`      |    ⚪ Gris    | Aparece como desconectado, **pero sigue funcionando**. |
+| Status Code | Color / View | Description                             |
+| :---------- | :----------: | :-------------------------------------- |
+| `online`    |   🟢 Green   | The bot is online and working normally. |
+| `idle`      |  🌙 Orange   | Away or idle.                           |
+| `dnd`       |    🔴 Red    | Do Not Disturb.                         |
+| `invisible` |   ⚪ Gray    | Appears offline, **but keeps running**. |
 
-## 🔄 Plantilla de Rotación Automática
+## 🔄 Auto-Rotation Template
 
-Copia y pega este array en tu evento `ready.js` para tener estados rotativos (Episodio #7):
+Copy and paste this array into your `ready.js` event to have rotating statuses (Episode #7):
 
 ```javascript
 const estados = [
   { name: "Minecraft", type: ActivityType.Playing, status: "online" },
   {
-    name: "ElAlda en Twitch",
+    name: "ElAlda on Twitch",
     type: ActivityType.Streaming,
-    url: "https://www.twitch.tv/elaldass",
+    url: "[https://www.twitch.tv/elaldass](https://www.twitch.tv/elaldass)",
     status: "online",
   },
-  { name: "Barriendo mi casa", type: ActivityType.Custom, status: "idle" },
+  { name: "Sweeping my house", type: ActivityType.Custom, status: "idle" },
 ];
 ```
 
 ---
 
-## 🛠️ Variables Mágicas (Client)
+## 🛠️ Magic Variables (Client)
 
-Usa estas variables dentro de tus `console.log` o estados para mostrar datos reales.
+Use these variables inside your `console.log` or statuses to display real data.
 
-### 📊 Estadísticas del Servidor
+### 📊 Server Statistics
 
-| Variable                                                     | Qué devuelve                                 | Ejemplo |
-| ------------------------------------------------------------ | -------------------------------------------- | ------- |
-| `client.guilds.cache.size`                                   | Cantidad de Servidores                       | `5`     |
-| `client.guilds.cache.reduce((a, g) => a + g.memberCount, 0)` | Usuarios Totales (Suma de todos los servers) | `1450`  |
-| `client.channels.cache.size`                                 | Canales Totales (Texto + Voz)                | `34`    |
-| `client.emojis.cache.size`                                   | Emojis que el bot puede ver                  | `20`    |
+| Variable                                                     | What it returns                  | Example |
+| ------------------------------------------------------------ | -------------------------------- | ------- |
+| `client.guilds.cache.size`                                   | Server Count                     | `5`     |
+| `client.guilds.cache.reduce((a, g) => a + g.memberCount, 0)` | Total Users (Sum of all servers) | `1450`  |
+| `client.channels.cache.size`                                 | Total Channels (Text + Voice)    | `34`    |
+| `client.emojis.cache.size`                                   | Emojis the bot can see           | `20`    |
 
-### 🤖 Identidad del Bot
+### 🤖 Bot Identity
 
-| Variable                                     | Descripción            | Ejemplo      |
-| -------------------------------------------- | ---------------------- | ------------ |
-| `client.user.tag`                            | Nombre + Discriminador | `TuBot#1234` |
-| `client.user.username`                       | Solo el nombre         | `TuBot`      |
-| `client.user.id`                             | ID única del bot       | `982374...`  |
-| `client.user.createdAt.toLocaleDateString()` | Fecha de nacimiento    | `1/2/2026`   |
+| Variable                                     | Description          | Example        |
+| -------------------------------------------- | -------------------- | -------------- |
+| `client.user.tag`                            | Name + Discriminator | `YourBot#1234` |
+| `client.user.username`                       | Only the name        | `YourBot`      |
+| `client.user.id`                             | Unique bot ID        | `982374...`    |
+| `client.user.createdAt.toLocaleDateString()` | Creation date        | `1/2/2026`     |
 
-### ⚙️ Datos Técnicos (Nerd Stats)
+### ⚙️ Technical Data (Nerd Stats)
 
-| Variable                                                    | Descripción        | Ejemplo    |
-| ----------------------------------------------------------- | ------------------ | ---------- |
-| `client.ws.ping`                                            | Latencia (Ping)    | `45ms`     |
-| `process.version`                                           | Versión de Node.js | `v22.0.0`  |
-| `(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)` | Memoria RAM usada  | `25.50 MB` |
+| Variable                                                    | Description     | Example    |
+| ----------------------------------------------------------- | --------------- | ---------- |
+| `client.ws.ping`                                            | Latency (Ping)  | `45ms`     |
+| `process.version`                                           | Node.js Version | `v22.0.0`  |
+| `(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)` | RAM Memory used | `25.50 MB` |
 
 ---
 
-> 💡 **Nota:** Algunas variables como el conteo de usuarios pueden tardar unos segundos en estar disponibles justo después de encender el bot (`clientReady`).
+> 💡 **Note:** Some variables like the user count might take a few seconds to become available right after turning on the bot (`clientReady`).

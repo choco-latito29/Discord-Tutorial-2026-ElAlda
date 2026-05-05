@@ -1,9 +1,9 @@
-# ❓ Preguntas Frecuentes (FAQ)
+# ❓ Frequently Asked Questions (FAQ)
 
-### 1. El bot no enciende y da error de "Intents"
+### 1. The bot won't start and throws an "Intents" error
 
-Asegúrate de tener activados los **Privileged Gateway Intents** (Presence, Server Members, Message Content) en el [Discord Developer Portal](https://discord.com/developers/applications).
+Make sure you have enabled the **Privileged Gateway Intents** (Presence, Server Members, Message Content) in the [Discord Developer Portal](https://discord.com/developers/applications).
 
-### 2. ¿Por qué mis logs no muestran quién borró un mensaje?
+### 2. Why don't my logs show who deleted a message?
 
-Si el mensaje fue borrado por el propio autor, Discord no genera un log de auditoría. El bot solo mostrará el moderador si el tiempo de acción es menor a 5 segundos respecto al evento.
+If the message was deleted by the author themselves, Discord does not generate an audit log. The bot will only show the moderator if the action time is less than 5 seconds from the event.
