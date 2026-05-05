@@ -9,15 +9,15 @@ module.exports = {
   developer: true,
   data: new SlashCommandBuilder()
     .setName("guild")
-    .setDescription("Administración global de los servidores del bot.")
+    .setDescription("🌐 Global administration of the bot's servers.")
     .addSubcommand((command) =>
       command
         .setName("leave")
-        .setDescription("Fuerza la salida del bot de un servidor específico.")
+        .setDescription("🚪 Forces the bot to leave a specific server.")
         .addStringOption((option) =>
           option
             .setName("id")
-            .setDescription("Selecciona o escribe el nombre/ID del servidor.")
+            .setDescription("🆔 Select or type the server Name/ID.")
             .setRequired(true)
             .setAutocomplete(true),
         ),
@@ -44,7 +44,7 @@ module.exports = {
             .setAccentColor(0xfee75c)
             .addTextDisplayComponents(
               new TextDisplayBuilder().setContent(
-                `⚠️ **Error de Búsqueda:** No me encuentro en ningún servidor con la ID \`\`${id}\`\`.`,
+                `⚠️ **Search Error:** I am not in any server with the ID \`\`${id}\`\`.`,
               ),
             );
 
@@ -57,14 +57,19 @@ module.exports = {
           return;
         }
 
+        const targetName = guild.name;
+        const targetId = guild.id;
         await guild.leave();
 
         const container = new ContainerBuilder()
           .setAccentColor(0x57f287)
           .addTextDisplayComponents(
             new TextDisplayBuilder().setContent(
-              `👋 **Desvinculación Exitosa**\n` +
-                `He abandonado el servidor **${guildName}** correctamente.`,
+              `✅ **Departure Successful**\n\n` +
+                `👋 **Server:** \`\`${targetName}\`\`\n` +
+                `🆔 **ID:** \`\`${targetId}\`\`\n` +
+                `📅 **Date:** <t:${Math.floor(Date.now() / 1000)}:f>\n\n` +
+                `> *The bot has been disconnected from the guild and its local cache has been cleared.*`,
             ),
           );
 
@@ -83,10 +88,12 @@ module.exports = {
 
   /**
    *
-   * @param {ChatInputCommandInteraction} interaction
+   * @param {import("discord.js").AutocompleteInteraction} interaction
    */
   async autocomplete(interaction) {
-    const allowedUserId = "839194749444816979";
+    const allowedUserId = process.env.DEVELOPERS_ID
+      ? process.env.DEVELOPERS_ID.split(",").map((id) => id.trim())
+      : [];
 
     if (interaction.user.id === allowedUserId) {
       const servers = interaction.client.guilds.cache;

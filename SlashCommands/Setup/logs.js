@@ -5,17 +5,18 @@ const {
   MessageFlags,
   ChannelType,
   PermissionsBitField,
+  SeparatorBuilder,
 } = require("discord.js");
 const { setData } = require("../../Events/Client/dbManager");
 
 module.exports = {
   data: new SlashCommandBuilder()
-    .setName("set-logs")
-    .setDescription("Configura el canal de logs.")
+    .setName("logs")
+    .setDescription("📡 Configure the server's audit logging system.")
     .addChannelOption((option) =>
       option
-        .setName("canal")
-        .setDescription("Canal donde se enviara los logs")
+        .setName("channel")
+        .setDescription("🛰️ Select the text channel for event logs.")
         .addChannelTypes(ChannelType.GuildText)
         .setRequired(true),
     )
@@ -27,16 +28,14 @@ module.exports = {
    * @param {import("discord.js").Client} client
    */
   async execute(interaction, client) {
-    if (
-      !interaction.member.permissions.has(
-        PermissionsBitField.Flags.Administrator,
-      )
-    ) {
+    const { guild, member, options } = interaction;
+
+    if (!member.permissions.has(PermissionsBitField.Flags.Administrator)) {
       const container = new ContainerBuilder()
         .setAccentColor(0xff0000)
         .addTextDisplayComponents(
           new TextDisplayBuilder().setContent(
-            "⚠️ Este comando solo es uso para los administradores del servidor.",
+            "⚠️ **Permission Denied:** This command is restricted to Server Administrators only.",
           ),
         );
 
@@ -49,15 +48,22 @@ module.exports = {
       return;
     }
 
-    const channel = interaction.options.getChannel("canal");
+    const channel = options.getChannel("channel");
 
-    setData("logs", interaction.guild.id, { logChannelId: channel.id });
+    setData("logs", guild.id, { logChannelId: channel.id });
 
     const container = new ContainerBuilder()
-      .setAccentColor(0x00ff00)
+      .setAccentColor(0x57f287)
+      .addTextDisplayComponents(
+        new TextDisplayBuilder().setContent("## ✅ System Audit Configured"),
+      )
+      .addSeparatorComponents(new SeparatorBuilder().setDivider(true))
       .addTextDisplayComponents(
         new TextDisplayBuilder().setContent(
-          `✅ Registro de logs configurado en ${channel}`,
+          `📡 **Logging Channel:** ${channel}\n` +
+            `🆔 **Channel ID:** \`\`${channel.id}\`\`\n` +
+            `📅 **Updated at:** <t:${Math.floor(Date.now() / 1000)}:f>\n\n` +
+            `> *All server events (messages, roles, channels) will now be reported to this location.*`,
         ),
       );
 
