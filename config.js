@@ -1,4 +1,15 @@
 module.exports = {
-  TOKEN_DISCORD_BOT: "AQUI VA EL TOKEN DEL BOT",
-  KEY: "AQUI VA CUALQUIER OTRA CLAVE SECRETA QUE QUIERAS GUARDAR",
+  // --- Discord Bot Authentication ---
+  TOKEN_DISCORD_BOT: "YOUR_BOT_TOKEN_HERE",
+
+  // --- System Notifications ---
+  // ID of the channel where the message will be sent when the bot is added to a server
+  CHANNEL_BOT_ADD_ID: "YOUR_ADD_CHANNEL_ID_HERE",
+
+  // ID of the channel where the message will be sent when the bot is removed from a server
+  CHANNEL_BOT_DELETE_ID: "YOUR_DELETE_CHANNEL_ID_HERE",
+
+  // --- Infrastructure & Permissions ---
+  // Authorized developer IDs. Format: "id1, id2, id3" (separated by commas)
+  DEVELOPERS_ID: "YOUR_DEVELOPER_ID_HERE",
 };
