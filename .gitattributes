@@ -12,3 +12,9 @@
 *.js text
 *.json text
 *.md text
+
+# Binarios
+*.png binary
+*.jpg binary
+*.gif binary
+*.ico binary
