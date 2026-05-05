@@ -15,7 +15,7 @@
 ![Visits](https://hits.sh/github.com/choco-latito29/Discord-Tutorial-2026-ElAlda.svg?style=for-the-badge&label=Total+Visits&extraCount=0&color=e24329)
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=5865F2&width=500&lines=Estado:+Transmitiendo+en+Kick+🟣;Viendo+a+servidores+y+usuarios+👀;Desarrollado+con+Discord.js+v14+🚀;¡No+olvides+dejar+tu+Estrella!+⭐;Ejecutando+en+Node.js+v22+🟢;Hecho+con+código+y+chocolate+🍫;24%2F7+Activo+(casi+siempre)+⚡" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=5865F2&width=500&lines=Status:+Streaming+on+Kick+🟣;Monitoring+Servers+and+Users+👀;Built+with+Discord.js+v14+🚀;Don't+forget+to+drop+a+Star!+⭐;Running+on+Node.js+v22+🟢;Crafted+with+Code+and+Chocolate+🍫;24%2F7+Active+(almost+always)+⚡" alt="Typing SVG" />
 </p>
 
 Welcome to the official repository for my Discord bot. This project documents progress and maintains clean, scalable code following the **ELALDA** (2026) tutorial series.
