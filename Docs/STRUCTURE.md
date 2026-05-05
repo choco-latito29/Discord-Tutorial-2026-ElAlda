@@ -42,7 +42,6 @@ This document explains the file organization within the **Discord Tutorial 2026*
 ├── .gitignore            # Files excluded from the repository
 ├── config.json           # Public configuration and settings
 ├── package.json          # Project dependencies and scripts
-└── xd.js                 # Template for troubleshooting and help
 ```
 
 ## 🛠️ Key Directories Explained
