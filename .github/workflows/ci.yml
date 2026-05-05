@@ -12,7 +12,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [22.x] # Usamos la versión de Node que configuraste en tu plantilla
+        node-version: [22.x]
 
     steps:
       - name: Checkout repository
@@ -22,9 +22,6 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
-          cache: "npm"
 
       - name: Install dependencies
         run: npm install
-
-    # Aquí en el futuro puedes agregar comandos como 'npm test' o 'npm run lint'
