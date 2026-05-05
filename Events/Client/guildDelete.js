@@ -70,7 +70,7 @@ module.exports = {
       .addSeparatorComponents(new SeparatorBuilder().setDivider(true))
       .addTextDisplayComponents(
         new TextDisplayBuilder().setContent(
-          `### 📊 Datos Generales (Caché)\n` +
+          `### 📊 Datos Generales\n` +
             `> **ID:** \`${guild.id}\`\n` +
             `> **Propietario:** <@${ownerId}> (\`${ownerId}\`)\n` +
             `> **Creación:** ${createdAt}\n` +

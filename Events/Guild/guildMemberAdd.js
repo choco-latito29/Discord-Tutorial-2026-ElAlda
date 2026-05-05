@@ -38,12 +38,7 @@ module.exports = {
     }
 
     if (rolesToAssign.length > 0) {
-      await member.roles.add(rolesToAssign).catch((error) => {
-        console.error(
-          `❌ [Autorol] Falló la asignación de roles: ${error.message}`.red
-            .bold,
-        );
-      });
+      await member.roles.add(rolesToAssign);
     }
   },
 };

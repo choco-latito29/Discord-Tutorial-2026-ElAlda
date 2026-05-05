@@ -29,7 +29,7 @@ module.exports = {
           .setAccentColor(0xff0000)
           .addTextDisplayComponents(
             new TextDisplayBuilder().setContent(
-              `El comando \`\`${commandName}\`\` no existe o ha sido eliminado...`,
+              `The command \`\`${commandName}\`\` does not exist or has been deleted...`,
             ),
           );
 
@@ -45,8 +45,8 @@ module.exports = {
           .setAccentColor(0xed4245)
           .addTextDisplayComponents(
             new TextDisplayBuilder().setContent(
-              "🔒 **Acceso Restringido**\n" +
-                "No tienes los permisos de desarrollador necesarios para ejecutar este comando.",
+              "🔒 **Restricted Access**\n" +
+                "You do not have the developer permissions required to execute this command.",
             ),
           );
 
@@ -63,7 +63,7 @@ module.exports = {
         await command.execute(interaction, client);
       } catch (error) {
         console.error(
-          `❌ Error al ejecutar el comando \`\`${interaction.commandName}\`\`: ${error.message}`,
+          `❌ Error executing command \`\`${interaction.commandName}\`\`: ${error.message}`,
         );
 
         if (interaction.replied || interaction.deferred) {
@@ -71,7 +71,7 @@ module.exports = {
             .setAccentColor(0xff0000)
             .addTextDisplayComponents(
               new TextDisplayBuilder().setContent(
-                `Ocurrió un error al ejecutar el comando \`\`${interaction.commandName}\`\`. Por favor, inténtalo de nuevo más tarde.`,
+                `An error occurred while executing the command \`\`${interaction.commandName}\`\`. Please try again later.`,
               ),
             );
 
@@ -85,7 +85,7 @@ module.exports = {
             .setAccentColor(0xff0000)
             .addTextDisplayComponents(
               new TextDisplayBuilder().setContent(
-                `Ocurrió un error al ejecutar el comando \`\`${interaction.commandName}\`\`. Por favor, inténtalo de nuevo más tarde.`,
+                `An error occurred while executing the command \`\`${interaction.commandName}\`\`. Please try again later.`,
               ),
             );
 
