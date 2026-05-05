@@ -1,4 +1,4 @@
-# 🤖 Discord Bot - Series 2026 (ElAlda)
+# 🤖 Discord Bot - 2026 Series (ElAlda)
 
 ![Discord.js](https://img.shields.io/badge/Discord.js-v14-5865F2?style=for-the-badge&logo=discord&logoColor=white)
 ![Node.js](https://img.shields.io/badge/Node.js-v24+-339933?style=for-the-badge&logo=node.js&logoColor=white)
@@ -19,51 +19,52 @@
   <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=5865F2&width=500&lines=Estado:+Transmitiendo+en+Kick+🟣;Viendo+a+servidores+y+usuarios+👀;Desarrollado+con+Discord.js+v14+🚀;¡No+olvides+dejar+tu+Estrella!+⭐;Ejecutando+en+Node.js+v22+🟢;Hecho+con+código+y+chocolate+🍫;24%2F7+Activo+(casi+siempre)+⚡" alt="Typing SVG" />
 </p>
 
-Bienvenido al repositorio oficial de mi bot de Discord. Este proyecto documenta el progreso y mantiene un código limpio y escalable siguiendo la serie de tutoriales de **ELALDA** (2026).
+Welcome to the official repository for my Discord bot. This project documents progress and maintains clean, scalable code following the **ELALDA** (2026) tutorial series.
 
-## 👤 Autor
+## 👤 Author
 
-- **Desarrollador:** [𝒞𝒽𝑜𝒸𝑜](https://github.com/choco-latito29)
-
----
-
-## 📖 Documentación Centralizada
-
-Para mantener este archivo limpio y fácil de leer, toda la información técnica detallada se encuentra organizada en nuestra carpeta local de documentación (`/Docs`).
-
-Allí encontrarás:
-
-- 📑 **[Temario Completo (Ep. 1 - 11)](./Docs/TEMARIO.md)** - _Resumen y lógica de cada comando._
-- ❓ **[Preguntas Frecuentes (FAQ)](./Docs/FAQ.md)** - _Solución a errores comunes._
-- ⚡ **[Hoja de Trucos (Variables y Estados)](./Docs/CHEATSHEET.md)**
-- 🛡️ **[Guía de Seguridad y Env](./Docs/SECURITY_GUIDE.md)**
-- 🤝 **[¿Cómo colaborar? (Guía de Contribución)](./.github/CONTRIBUTING.md)**
+- **Developer:** [𝒞𝒽𝑜𝒸𝑜](https://github.com/choco-latito29)
 
 ---
 
-## 🛠️ Tecnologías y Librerías Principales
+## 📖 Centralized Documentation
 
-- **Entorno:** [Node.js](https://nodejs.org/es/) (ES6+)
-- **API de Discord:** [Discord.js v14](https://discord.js.org/)
-- **Seguridad:** [Dotenv](https://www.npmjs.com/package/dotenv) (Gestión de variables de entorno)
-- **Imágenes:** [Canvas](https://www.npmjs.com/package/@napi-rs/canvas) (Manipulación de imágenes)
+To keep this file clean, all detailed technical information is organized in our local documentation folder (`/Docs`).
+
+There you will find:
+
+- 📑 **[Full Syllabus (Ep. 1 - 11)](./Docs/TEMARIO.md)** - _Overview and logic for each command._
+- ❓ **[FAQ](./Docs/FAQ.md)** - _Solutions to common errors._
+- ⚡ **[Cheat Sheet](./Docs/CHEATSHEET.md)** - _Variables and Status codes._
+- 🛡️ **[Security & Env Guide](./Docs/SECURITY_GUIDE.md)**
+- 🤝 **[Contribution Guide](./.github/CONTRIBUTING.md)**
 
 ---
 
-## 🚀 Instalación y Uso
+## 🛠️ Core Technologies & Libraries
 
-### 🔄 Actualización (Si ya tienes el bot clonado)
+- **Runtime:** [Node.js](https://nodejs.org/) (v18.0.0+)
+- **API:** [Discord.js v14](https://discord.js.org/)[cite: 4]
+- **Security:** [Dotenv](https://www.npmjs.com/package/dotenv)[cite: 5]
+- **Images:** [Canvas](https://www.npmjs.com/package/@napi-rs/canvas)
 
-No clones de nuevo. Abre tu terminal en la carpeta del bot y ejecuta:
+---
+
+## 🚀 Installation & Usage
+
+### 🔄 Update (Existing Installation)
+
+Do not clone again. Open your terminal in the bot folder and run:
 
 ```bash
 git pull
+
 npm install
 ```
 
-### 🆕 Instalación desde cero
+### 🆕 Fresh Installation
 
-1.  **Clonar el repositorio:**
+1.  **Clone the repository:**
 
 <!-- end list -->
 
@@ -71,7 +72,7 @@ npm install
 git clone --depth 1 https://github.com/choco-latito29/Discord-Tutorial-2026-ElAlda.git
 ```
 
-2.  **Instalar dependencias:**
+2.  **Install dependencies:**
 
 ```bash
 cd Discord-Tutorial-2026-ElAlda
@@ -79,17 +80,17 @@ cd Discord-Tutorial-2026-ElAlda
 npm install
 ```
 
-3.  **Configuración Segura (.env):**
-    Abre el archivo `.env` y pega tu Token:
+3.  **Secure Configuration (.env):**
+    Open the `.env` template and fill in your Token:
 
     ```ini
     TOKEN_DISCORD_BOT = "TU_TOKEN_REAL_AQUI"
     ```
 
-4.  **Encender el bot:**
+4.  **Run the bot:**
 
 ```bash
-node index.js
+npm start
 ```
 
 ---
