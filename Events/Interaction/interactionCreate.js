@@ -15,15 +15,21 @@ module.exports = {
    * @param {import("discord.js").Client} client
    */
   async execute(interaction, client) {
+    const { commandName, user } = interaction;
+
+    const developers = process.env.DEVELOPERS_ID
+      ? process.env.DEVELOPERS_ID.split(",").map((id) => id.trim())
+      : [];
+
     if (interaction.isChatInputCommand()) {
-      const command = client.slashCommands.get(interaction.commandName);
+      const command = client.slashCommands.get(commandName);
 
       if (!command) {
         const container = new ContainerBuilder()
           .setAccentColor(0xff0000)
           .addTextDisplayComponents(
             new TextDisplayBuilder().setContent(
-              `El comando \`\`${interaction.commandName}\`\` no existe o ha sido eliminado...`,
+              `El comando \`\`${commandName}\`\` no existe o ha sido eliminado...`,
             ),
           );
 
@@ -32,6 +38,25 @@ module.exports = {
           components: [container],
           allowedMentions: { repliedUser: false },
         });
+      }
+
+      if (command.developer && !developers.includes(user.id)) {
+        const container = new ContainerBuilder()
+          .setAccentColor(0xed4245)
+          .addTextDisplayComponents(
+            new TextDisplayBuilder().setContent(
+              "🔒 **Acceso Restringido**\n" +
+                "No tienes los permisos de desarrollador necesarios para ejecutar este comando.",
+            ),
+          );
+
+        await interaction.reply({
+          flags: MessageFlags.Ephemeral | MessageFlags.IsComponentsV2,
+          components: [container],
+          allowedMentions: { repliedUser: false },
+        });
+
+        return;
       }
 
       try {
