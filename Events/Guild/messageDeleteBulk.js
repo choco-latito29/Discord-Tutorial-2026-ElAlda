@@ -13,7 +13,7 @@ module.exports = {
   /**
    *
    * @param {import("discord.js").Message>} messages
-   * @param {import("discord.js").GuildTextBasedChannel} channel
+   * @param {import("discord.js").Channel} channel
    * @param {import("discord.js").Client} client
    */
   async execute(messages, channel, client) {

@@ -11,7 +11,7 @@ module.exports = {
   on: true,
   /**
    *
-   * @param {import("discord.js").Interaction} interaction
+   * @param {import("discord.js").ChatInputCommandInteraction} interaction
    * @param {import("discord.js").Client} client
    */
   async execute(interaction, client) {
