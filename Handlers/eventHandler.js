@@ -26,7 +26,7 @@ module.exports = {
     });
 
     console.info(
-      `✅ ${cantidadEventos} eventos cargados correctamente.`.green.bold,
+      `✅ ${cantidadEventos} events loaded successfully.`.green.bold,
     );
   },
 };

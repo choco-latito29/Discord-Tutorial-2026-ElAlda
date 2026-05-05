@@ -22,7 +22,7 @@ module.exports = {
     await client.application.commands.set(commands);
 
     console.info(
-      `✅ ${commands.length} comandos slash cargados correctamente.`.green.bold,
+      `✅ ${commands.length} slash commands loaded successfully.`.green.bold,
     );
   },
 };
