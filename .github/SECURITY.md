@@ -1,13 +1,13 @@
-# Política de Seguridad
+# Security Policy
 
-## Versiones Soportadas
+## Supported Versions
 
-| Versión | Soportada          |
+| Version | Supported          |
 | ------- | ------------------ |
 | 1.0.x   | :white_check_mark: |
 | < 1.0   | :x:                |
 
-## Reportar una Vulnerabilidad
+## Reporting a Vulnerability
 
-Si descubres un fallo de seguridad, por favor **NO abras un Issue público**.
-Envíame un mensaje directo (DM) en Discord.
+If you discover a security flaw, please **DO NOT open a public Issue**.
+Send me a Direct Message (DM) on Discord.

@@ -1,35 +1,35 @@
-# Guía de Contribución
+# Contributing Guidelines
 
-¡Gracias por tu interés en contribuir a **Discord Tutorial 2026**!
+Thank you for your interest in contributing to **Discord Tutorial 2026**!
 
-Este proyecto es parte de una serie educativa siguiendo los tutoriales de **ELALDA**. Aunque es un proyecto personal de aprendizaje, las sugerencias y correcciones son bienvenidas.
+This project is part of an educational series following the **ELALDA** tutorials. Although it is primarily a personal learning project, suggestions, optimizations, and corrections are highly welcome.
 
-## ¿Cómo puedo contribuir?
+## How can I contribute?
 
-### 1. Reportar Errores (Bugs)
+### 1. Reporting Bugs
 
-Si encuentras un error en el código o algo no funciona como debería:
+If you find a bug in the code or something doesn't work as expected:
 
-- Abre un **Issue** en este repositorio.
-- Describe qué estabas haciendo cuando ocurrió el error.
-- Incluye capturas de pantalla si es posible.
+- Open an **Issue** in this repository.
+- Describe what you were doing when the error occurred.
+- Include screenshots if possible.
 
-### 2. Sugerir Mejoras
+### 2. Suggesting Enhancements
 
-Si tienes ideas para optimizar el código:
+If you have ideas to optimize the code or add new features:
 
-- Abre un **Issue** con la etiqueta `enhancement`.
-- Explica por qué tu mejora sería útil.
+- Open an **Issue** using the `enhancement` label.
+- Explain why your improvement would be useful or necessary.
 
 ### 3. Pull Requests (PR)
 
-Si quieres arreglar el código tú mismo:
+If you want to fix the code or implement an improvement yourself:
 
-1. Haz un **Fork** del repositorio.
-2. Crea una rama para tu cambio (`git checkout -b feature/mi-mejora`).
-3. Asegúrate de que tu código sigue el estilo del proyecto (JS estándar).
-4. Sube tus cambios y abre un Pull Request.
+1. **Fork** the repository.
+2. Create a branch for your change (`git checkout -b feature/my-improvement`).
+3. Ensure your code follows the project's style (standard JavaScript).
+4. Push your changes and open a Pull Request.
 
 ---
 
-**Nota:** Por favor, mantén un lenguaje respetuoso y sigue nuestro [Código de Conducta](./CODE_OF_CONDUCT.md).
+**Note:** Please maintain a respectful environment and follow our [Code of Conduct](./CODE_OF_CONDUCT.md).

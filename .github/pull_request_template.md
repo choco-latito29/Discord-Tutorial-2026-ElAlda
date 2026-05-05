@@ -1,17 +1,17 @@
-## 📋 Descripción
+## 📋 Description
 
-Por favor incluye un resumen de los cambios y qué problema solucionan.
+Please include a summary of the changes and what problem they fix.
 
-## 📌 Tipo de cambio
+## 📌 Type of change
 
-- [ ] 🐛 Bug fix (solución a un error)
-- [ ] ✨ New feature (nueva funcionalidad)
-- [ ] ♻️ Refactoring (mejora de código sin cambios lógicos)
-- [ ] 📚 Documentation (cambios en documentación)
+- [ ] 🐛 Bug fix (fixes an issue)
+- [ ] ✨ New feature (adds functionality)
+- [ ] ♻️ Refactoring (code improvement without logical changes)
+- [ ] 📚 Documentation (documentation changes)
 
-## ✅ Lista de Verificación
+## ✅ Checklist
 
-- [ ] Mi código sigue el estilo de este proyecto.
-- [ ] He realizado una auto-revisión de mi propio código.
-- [ ] He comentado las partes difíciles de entender.
-- [ ] Mis cambios no generan nuevos errores.
+- [ ] My code follows the style guidelines of this project.
+- [ ] I have performed a self-review of my own code.
+- [ ] I have commented my code, particularly in hard-to-understand areas.
+- [ ] My changes generate no new errors.

@@ -1,21 +1,21 @@
-# Código de Conducta - Pacto de Contribuyentes
+# Contributor Covenant Code of Conduct
 
-## Nuestro Compromiso
+## Our Pledge
 
-Nosotros, como miembros, contribuyentes y administradores, nos comprometemos a hacer de la participación en este proyecto una experiencia libre de acoso para todos, independientemente de la edad, dimensión corporal, discapacidad visible o invisible, etnicidad, características sexuales, identidad y expresión de género, nivel de experiencia, educación, nivel socio-económico, nacionalidad, apariencia personal, raza, religión, o identidad y orientación sexual.
+We as members, contributors, and leaders pledge to make participation in our project a harassment-free experience for everyone, regardless of age, body size, visible or invisible disability, ethnicity, sex characteristics, gender identity and expression, level of experience, education, socio-economic status, nationality, personal appearance, race, religion, or sexual identity and orientation.
 
-Nos comprometemos a actuar e interactuar de maneras que contribuyan a una comunidad abierta, acogedora, diversa, inclusiva y saludable.
+We pledge to act and interact in ways that contribute to an open, welcoming, diverse, inclusive, and healthy community.
 
-## Nuestros Estándares
+## Our Standards
 
-Ejemplos de comportamiento que contribuyen a crear un ambiente positivo para nuestra comunidad:
+Examples of behavior that contributes to a positive environment for our community include:
 
-- Demostrar empatía y amabilidad ante otros usuarios.
-- Ser respetuoso con diferentes opiniones, puntos de vista y experiencias.
-- Dar y aceptar adecuadamente retroalimentación constructiva.
-- Aceptar la responsabilidad y disculparse ante quienes afectemos por nuestros errores, aprendiendo de la experiencia.
-- Enfocarse en lo que es mejor no sólo para nosotros como individuos, sino para la comunidad en general.
+- Demonstrating empathy and kindness toward other people.
+- Being respectful of differing opinions, viewpoints, and experiences.
+- Giving and gracefully accepting constructive feedback.
+- Accepting responsibility and apologizing to those affected by our mistakes, and learning from the experience.
+- Focusing on what is best not just for us as individuals, but for the overall community.
 
-## Aplicación
+## Enforcement
 
-Cualquier comportamiento abusivo, acosador o inaceptable puede ser reportado al administrador del proyecto: **𝒞𝒽𝑜𝒸𝑜**. Todas las quejas serán revisadas e investigadas puntualmente y de manera justa.
+Instances of abusive, harassing, or otherwise unacceptable behavior may be reported to the project administrator: **𝒞𝒽𝑜𝒸𝑜**. All complaints will be reviewed and investigated promptly and fairly.
