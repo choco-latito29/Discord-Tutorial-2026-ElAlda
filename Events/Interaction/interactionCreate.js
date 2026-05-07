@@ -63,7 +63,7 @@ module.exports = {
         await command.execute(interaction, client);
       } catch (error) {
         console.error(
-          `❌ Error executing command \`\`${interaction.commandName}\`\`: ${error.message}`,
+          `❌ Error executing command ${interaction.commandName}: ${error.message}`,
         );
 
         if (interaction.replied || interaction.deferred) {

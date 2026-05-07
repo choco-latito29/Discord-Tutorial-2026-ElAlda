@@ -6,6 +6,9 @@ module.exports = {
   // ID of the channel where the message will be sent when the bot is added to a server
   CHANNEL_BOT_ADD_ID: "YOUR_ADD_CHANNEL_ID_HERE",
 
+  // ID of the channel where the message will be sent
+  CHANNEL_LOGS_ID: "YOUR_LOGS_CHANNEL_ID_HERE",
+
   // ID of the channel where the message will be sent when the bot is removed from a server
   CHANNEL_BOT_DELETE_ID: "YOUR_DELETE_CHANNEL_ID_HERE",
 
