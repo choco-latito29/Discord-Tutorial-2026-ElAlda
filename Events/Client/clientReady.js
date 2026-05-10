@@ -4,43 +4,32 @@ require("colors");
 module.exports = {
   name: "clientReady",
   once: true,
-  /**
-   *
-   * @param {import("discord.js").Client} client
-   */
   async execute(client) {
-    console.info(`Bot encendido como: ${client.user.tag}`.green.bold);
+    console.info(`Bot online as: ${client.user.tag}`.green.bold);
 
     await require("../../Handlers/slashHandler").loadSlash(client);
 
+    //console.log(`[MOONLINK] Initializing manager...`);
+    if (!client.manager._initialized) {
+      client.manager.init(client.user.id);
+      require("./playerStart")(client);
+      client.manager._initialized = true;
+      console.log(`[MOONLINK] Init called`);
+    } else {
+      //console.log(`[MOONLINK] Init already called, skipping`);
+    }
+
     const estados = [
-      {
-        name: "Aldas Tutorial",
-        type: ActivityType.Playing,
-        status: "online",
-      },
-      {
-        name: "Aldas Videos",
-        type: ActivityType.Playing,
-        status: "online",
-      },
-      {
-        name: "Bot Tutorial",
-        type: ActivityType.Playing,
-        status: "online",
-      },
-      {
-        name: "DiscordJS",
-        type: ActivityType.Playing,
-        status: "online",
-      },
+      { name: "Aldas Tutorial", type: ActivityType.Playing, status: "online" },
+      { name: "Aldas Videos", type: ActivityType.Playing, status: "online" },
+      { name: "Bot Tutorial", type: ActivityType.Playing, status: "online" },
+      { name: "DiscordJS", type: ActivityType.Playing, status: "online" },
     ];
 
     let i = 0;
 
     setInterval(async () => {
       const actual = estados[i];
-
       client.user.setPresence({
         activities: [
           {
@@ -49,7 +38,6 @@ module.exports = {
             url: actual.url ?? null,
           },
         ],
-
         status: actual.status,
       });
       i = (i + 1) % estados.length;

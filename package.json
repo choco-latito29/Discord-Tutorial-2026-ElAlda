@@ -34,6 +34,7 @@
     "@napi-rs/canvas": "^1.0.0",
     "colors": "^1.4.0",
     "discord.js": "^14.26.4",
-    "dotenv": "^17.4.2"
+    "dotenv": "^17.4.2",
+    "moonlink.js": "^5.2.0"
   }
 }
