@@ -5,10 +5,10 @@ module.exports = (client) => {
 
   const nodes = [
     {
-      identifier: "Exodus Lavalink",
-      host: "23.230.3.189",
-      port: 8109,
-      password: "https://lavalink.exodus-panel.xyz/",
+      identifier: "YOU NAME",
+      host: "YOU ACCESS TO HOST",
+      port: "YOU PORT",
+      password: "YOU PASSWORD TO LAVALINK",
       secure: false,
       retryAmount: 5,
       retryDelay: 15000,
